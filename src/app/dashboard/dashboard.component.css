@@ -1,0 +1,145 @@
+.container{
+  display: grid;
+  height:85vh;
+  grid-template-columns: auto auto;
+}
+
+  .child1{
+  tab-size:30%;
+
+  background-color: rgb(244, 244, 244);
+  overflow-x: hidden;
+  overflow-y:auto;
+  text-align: justify;
+}  
+
+/* .child::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+.child::-webkit-scrollbar{
+  width: 12px;
+  background-color: #f5f5f5;
+}
+.child::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #555;
+} */
+.text1{
+  margin-left: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.card1{
+  max-width: 100%;
+  margin-left: 5px;
+  margin-top: 50px;
+  height: 100px;
+  /* background:url(/assets/image/celebration-pattern.png); */
+}
+.card2{
+  max-width: 100%;
+  margin-left: 10px;
+  margin-top: 30px;
+  height: 150px;
+}
+.card3{
+  max-width: 100%;
+  margin-left: 10px;
+  margin-top: 50px;
+  height: 150px;
+}
+mat-toolbar{
+  background:white;
+  color:black;
+  padding: 1px;
+  width: 10px;
+}
+mat-sidenav{
+  margin: 16px;
+  width: 80px;
+  border-right: none;
+  background: #263238;
+  color :white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header{
+  font-size: 15px;
+
+}
+.content{
+ height: calc(100vh - 98px);
+ margin: 13px;
+ margin-left: 30px;
+ /* display:flex; */
+ 
+ font-size: 1rem;
+ color:black;
+ border-radius: 10px;
+}
+mat-sidenav-container{
+
+height: calc(100vh - 65px);
+}
+mat-sidenav-container::-webkit-scrollbar{
+ display: none;
+}
+mat-sidenav-container::-webkit-scrollbar{
+  display: none;
+ }
+ .mat-drawer-inner-container::-webkit-scrollbar {
+   display: block;
+}
+.menu-button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  margin-top: 25px;
+
+ 
+}
+.avatar {
+ margin-top: 16px;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+}
+
+.name{
+  margin-top:8px;
+  font-weight: normal;
+}
+
+.designation{
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgray;
+}
+mat-divider{
+   margin-top: 16px;
+   margin-bottom: 16px;
+   background-color: rgba(255,255,255,0.5);
+}
+
+.goto{
+ margin-bottom: 50%;
+ margin-left: 80%;
+}
+.mtmail{
+ margin-left: 850px;
+ padding-top: 0;
+ color: darkgray;
+}
+.menuline{
+padding-right: 30px;
+}
+ .feed{
+   margin-left: 50px;
+  padding-top: 50px;
+ }

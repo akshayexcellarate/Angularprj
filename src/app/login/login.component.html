@@ -1,0 +1,33 @@
+<div class="content-body">
+<mat-card style="background-image:url(/assets/image/login2.png)">
+    <mat-card-content>
+        <div class>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>Welcome! Sign in to continue</b></h2>
+       
+        </div>
+        <form (ngSubmit)="onLogin()" name="loginForm"[formGroup]="loginForm">
+            <mat-error>
+                <h5>{{this.msg}}</h5>
+            </mat-error>
+       
+            <div class="email-input">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" name="email" matInput required [(ngModel)]="user.emailId"/>
+                    <!-- <mat-error *ngIf="loginForm.get('email')>
+                        Required email address
+                        </mat-error> -->
+                </mat-form-field>
+            </div>
+        <div>
+            <!-- <span class="aLink">Forget Password?</span> -->
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" input type="password" name="password" matInput required [(ngModel)]="user.password" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+            </mat-form-field>
+        </div>
+        <button mat-flat-button color="primary">Login</button>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div>

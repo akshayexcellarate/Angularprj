@@ -1,0 +1,79 @@
+<mat-toolbar>
+   <button mat-button [matMenuTriggerFor]="menu"  class="menuline">
+     <mat-icon>menu</mat-icon>
+   </button>
+   <mat-menu #menu="matMenu">
+     <button mat-menu-item a routerLink="/">Logout
+       <mat-icon><b>power_settings_new</b></mat-icon>
+     </button>
+     <button mat-menu-item>settings
+       <mat-icon><b>settings</b></mat-icon>
+     </button>
+   </mat-menu>
+   <div class="header">
+      <h6 class="header">SYNERZIP SOFTECH INDIA PRIVATE LIMITED</h6> 
+   </div>
+  
+   <div class="mtmail">
+     <button mat-button>
+     <mat-icon  matBadgeColor="warn" matBadgeSize="small" >notifications</mat-icon>
+   </button>
+   </div> 
+ </mat-toolbar>
+ 
+ <mat-sidenav-container>
+   <mat-sidenav mode="side" opened>  
+     <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200"/> -->
+
+ 
+      <button mat-button class="menu-button" >
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-button class="menu-button" a routerLink="/inbox">
+       <mat-icon>markunread</mat-icon>
+     </button>
+     <button mat-button class="menu-button" a routerLink="/about">
+       <mat-icon>how_to_reg</mat-icon>
+     </button>
+
+ 
+   </mat-sidenav>
+   <mat-sidenav-content>
+     <div class="content mat-elevation-z4" >
+    <router-outlet></router-outlet>  
+      <div class="container">
+        <div style class="child1">
+            <h1 class="text1">Hi Akshay ! </h1>
+            <mat-card class="card1" style="background-image:url(/assets/image/celeberation-pattern.png)">
+              <h5 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>Today's celebrations</b></h5>
+            </mat-card>
+         <mat-divider></mat-divider>
+            <h5 style="margin-left:30px; font-size:1rem;font-family:'Times New Roman', Times, serif;"><b>Feeds</b></h5>
+           <mat-card class="card2" >
+
+           </mat-card>
+           <mat-card class="card3" >
+
+          </mat-card>  
+        </div>
+        <div style="background-color: rgb(235, 235, 235);" class="container2">
+          
+         <button mat-button style="margin-top: 20px; margin-left: 30px; color:#0ee2e2;">
+          <mat-icon style="font-size:medium; margin-top: 3px;">settings</mat-icon>
+          Customize
+        </button>
+         
+        <h6 style="font-size: 10px; color: #1b2436; margin-left: 55px; font-family: Arial, Helvetica, sans-serif; ">MARK ATTENDENCE</h6>
+          <mat-card style="max-width: 70%; margin-left:55px;height:60px;">
+             <button mat-button style="margin-left: 30%; color:white; background-color:#0ee2e2;">
+              Mark Attendence
+             </button>   
+          </mat-card>
+          <mat-card style="max-width:70%; margin-left:55px;height:50px; margin-top:30px; font-size:small;">
+                <!-- Have any queries ? I am here to help -->
+          </mat-card>
+        </div>
+      </div>  
+     </div>
+    </mat-sidenav-content> 
+  </mat-sidenav-container>
