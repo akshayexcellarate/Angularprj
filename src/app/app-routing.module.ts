@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { InboxComponent } from './inbox/inbox.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 const routes: Routes = [
  {
@@ -21,6 +22,10 @@ const routes: Routes = [
      {
        path:'inbox',
        component:InboxComponent
+     },
+     {
+       path:'userprofile',
+       component:UserprofileComponent
      }
    ]
  }

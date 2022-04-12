@@ -1,0 +1,115 @@
+
+mat-sidenav{
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #1b2436; 
+    color :white;
+ 
+    padding: 16px;
+    text-align: center;
+}
+
+.content{
+   height: calc(100vh - 98px);
+   margin: 16px;
+   margin-left: 32px;
+   display:flex;
+   
+   
+   
+   font-size: 1rem;
+   color:black;
+
+   border-radius: 10px;
+}
+mat-sidenav-container{
+
+height: calc(100vh - 65px);
+}
+
+.menu-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+     mat-icon{
+         margin-right: 8px;    
+}
+
+.avatar {
+   margin-top: 16px;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+.name{
+    margin-top:8px;
+    font-weight: normal;
+}
+
+.designation{
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgray;
+}
+ mat-divider{
+     margin-top: 16px;
+     margin-bottom: 16px;
+     background-color: rgba(255,255,255,0.5);
+ }
+
+.goto{
+   margin-bottom: 50%;
+   margin-left: 80%;
+}
+.mtmail{
+   margin-left: 78%;
+   padding-top: 1%;
+}
+.menuline{
+ padding-right: 30px;
+}
+.sidebarmenu{
+    /* padding: 0!important;
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important; */
+    position: relative;
+    max-width: 168px;
+    /* background: #262e3e!important; */
+    background-image: initial !important;
+    /* background-position-x: initial !important;
+    background-position-y: initial !important; */
+    background-size: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    /* background-color: rgb(38, 46, 62) !important;
+    top: 0!important; */
+    
+    width: 100%;
+}
+.sidebar-menu>li>.submenu-1{
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 400;
+    color: #bdc7da!important;
+    letter-spacing: .3px;
+    width: 100%;
+}
+.sidebar-menu>li{
+    margin-right: 40px;
+
+    position: relative;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    display: block;
+}

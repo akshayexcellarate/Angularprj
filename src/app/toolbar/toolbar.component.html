@@ -1,1 +1,23 @@
-<p>toolbar works!</p>
+<mat-toolbar>
+    <button mat-button [matMenuTriggerFor]="menu"  class="menuline">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item a routerLink="/">Logout
+        <mat-icon><b>power_settings_new</b></mat-icon>
+      </button>
+      <button mat-menu-item>settings
+        <mat-icon><b>settings</b></mat-icon>
+      </button>
+    </mat-menu>
+    <div class="header">
+       <h6 class="header">SYNERZIP SOFTECH INDIA PRIVATE LIMITED</h6> 
+    </div>
+   
+    <div class="mtmail">
+      <button mat-button>
+      <mat-icon  matBadgeColor="warn" matBadgeSize="small" >notifications</mat-icon>
+    </button>
+    </div> 
+  </mat-toolbar>
+  

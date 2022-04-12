@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup,FormBuilder,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-userprofile',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./userprofile.component.css']
 })
 export class UserprofileComponent implements OnInit {
-
-  constructor() { }
+  productForm!:FormGroup;
+  constructor(private formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
+    this.productForm=this.formBuilder.group({
+      firstName:['',Validators.required],
+      middleName:['',Validators.required],
+      lastName:['',Validators.required],
+      birthDate:['',Validators.required]
+    })
   }
 
 }
