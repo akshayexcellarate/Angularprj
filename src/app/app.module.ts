@@ -20,6 +20,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu';
 import { InboxComponent } from './inbox/inbox.component';
 import { HomeComponent } from './home/home.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { RequestComponent } from './request/request.component';
+import { NotificationComponent } from './notification/notification.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,11 @@ import { HomeComponent } from './home/home.component';
     RegistrationComponent,
     DashboardComponent,
     InboxComponent,
-    HomeComponent
+    HomeComponent,
+    UserprofileComponent,
+    ToolbarComponent,
+    RequestComponent,
+    NotificationComponent
 
   ],
   imports: [
