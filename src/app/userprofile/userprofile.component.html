@@ -1,67 +1,289 @@
 <app-toolbar></app-toolbar>
-  
-  <mat-sidenav-container>
-    <mat-sidenav mode="side" opened>  
-      <img class="avatar mat-elevation-z8" src=""/>
-      <h4 class="name">Akshay Kadam</h4>
-  <p class="designation">Software Engineer</p>
-  
-  <mat-divider></mat-divider>
-  <button mat-button  a routerLink="/dashboard" style="margin-right:100px;">
-    <mat-icon>arrow_back_ios</mat-icon>
-  </button>
-  <div class="sidebarmenu">
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <img class="avatar mat-elevation-z8" src="/assets/image/profile.jpeg" />
+    <h4 class="name">Akshay Kadam</h4>
+    <p class="designation">Software Engineer</p>
+
+    <mat-divider></mat-divider>
+    <button mat-button a routerLink="/dashboard" style="margin-right:100px;">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+    <div class="sidebarmenu">
       <ul class="sidebar-menu">
-          <li>
-              <a class="submenu-1"  href="">
-                  Attendence
-              </a>
-          </li>
         <li>
-            <a class="submenu-1"  href="">
-                Clearance 
-            </a>
+          <a class="submenu-1" href="">
+            Attendence
+          </a>
         </li>
         <li>
-            <a class="submenu-1"  href="">
-                Holiday calendar 
-            </a>
+          <a class="submenu-1" href="">
+            Clearance
+          </a>
         </li>
         <li>
-            <a class="submenu-1"  href="">
-                HR handbook 
-            </a>
+          <a class="submenu-1" href="">
+            Holiday calendar
+          </a>
         </li>
         <li>
-            <a class="submenu-1"  href="">
-                Leave balance 
-            </a>
+          <a class="submenu-1" href="">
+            HR handbook
+          </a>
         </li>
         <li>
-            <a class="submenu-1"  href="">
-                Letter 
-            </a>
+          <a class="submenu-1" href="">
+            Leave balance
+          </a>
         </li>
         <li>
-            <a class="submenu-1"  href="">
-                Payslip 
-            </a>
+          <a class="submenu-1" href="">
+            Letter
+          </a>
         </li>
         <li>
-            <a class="submenu-1"  href="">
-                Qr code 
-            </a>
+          <a class="submenu-1" href="">
+            Payslip
+          </a>
         </li>
-      
+        <li>
+          <a class="submenu-1" href="">
+            Qr code
+          </a>
+        </li>
+
       </ul>
-  </div>
-    
-    </mat-sidenav>
-    <mat-sidenav-content>
-  
-    
-  
-        
-      
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="header-content">
+      <b>
+        <h5 style="font-size:15px; font-weight:550;">Basic Information</h5>
+      </b>
+    </div>
+    <form [formGroup]="productForm">
+      <table style="width: 10%" [cellSpacing]="40" class="table1">
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Prefix</h5>
+              <mat-form-field appearance="legacy">
+                <input formControlName="prefix" required [ngModel]="user.prefix" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*First Name</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="firtsName" required [ngModel]="user.firtsName" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Middle Name</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="middleName" required [ngModel]="user.middleName" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Last Name</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="lastName" required [ngModel]="user.lastName" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Employee code</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="code" required [ngModel]="user.code" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Date of birth</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="dob" required [ngModel]="user.dob" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Work mail</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="mail" required [ngModel]="user.mail" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Mobile number</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="mob" required [ngModel]="user.mob" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Skill type</h5>
+              <mat-form-field appearance="legacy">
+                <input formControlName="skill" required [ngModel]="user.skill" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="header-content">
+        <b>
+          <h5 style="font-size:15px; font-weight:550;">Employment status & type</h5>
+        </b>
+      </div>
+
+      <table style="width: 10%" [cellSpacing]="40" class="table1">
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Date of joining</h5>
+              <mat-form-field appearance="legacy">
+                <input formControlName="doj" required [ngModel]="user.doj" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Employment type</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="emptype" required [ngModel]="user.emptype" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Employment status</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="empstatus" required [ngModel]="user.empstatus" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Date of Confirmation</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="dateofconf" required [ngModel]="user.dateofconf" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="header-content">
+        <b>
+          <h5 style="font-size:15px; font-weight:550;">Position</h5>
+        </b>
+      </div>
+
+      <table style="width: 10%" [cellSpacing]="40" class="table1">
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Company</h5>
+              <mat-form-field appearance="legacy">
+                <input formControlName="company" required [ngModel]="user.company" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Business unit</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="bu" required [ngModel]="user.bu" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Department</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="dept" required [ngModel]="user.dept" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Designation</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="desig" required [ngModel]="user.desig" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Region</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="region" required [ngModel]="user.region" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Branch</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="branch" required [ngModel]="user.branch" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="formfield1">
+              <h5>*Reporting Manager</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="reportmanager" required [ngModel]="user.reportmanager" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+          <td>
+            <div class="formfield1">
+              <h5>*Functional Manager</h5>
+              <mat-form-field appearance="legacy">
+
+                <input formControlName="funmanager" required [ngModel]="user.funmanager" [readonly]="true" matInput placeholder="">
+              </mat-form-field>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

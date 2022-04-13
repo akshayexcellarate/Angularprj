@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder,Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { RegistrationService } from '../registration.service';
+import { UserDetails } from '../UserDetails';
 
 @Component({
   selector: 'app-userprofile',
@@ -8,14 +11,45 @@ import { FormGroup,FormBuilder,Validators } from '@angular/forms';
 })
 export class UserprofileComponent implements OnInit {
   productForm!:FormGroup;
-  constructor(private formBuilder:FormBuilder) { }
+  userlist!:UserDetails[];
+  user= new UserDetails();
+  id!:any;
+  constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute) { }
 
   ngOnInit(): void {
+this.id=(this.activate.snapshot.paramMap.get('id'));
+ this.api.fetchUserDetailsById(this.id).subscribe(
+   data=>{
+         console.log("data occured");
+        this.user=data; 
+        console.log(this.user);
+        
+   },
+   error=> console.log("Exception occured")
+ )
+  
     this.productForm=this.formBuilder.group({
-      firstName:['',Validators.required],
+      prefix:['',Validators.required],
+      firtsName:['',Validators.required],
       middleName:['',Validators.required],
       lastName:['',Validators.required],
-      birthDate:['',Validators.required]
+      code:['',Validators.required],
+      dob:['',Validators.required],
+      mail:['',Validators.required],
+      mob:['',Validators.required],
+      skill:['',Validators.required],
+      doj:['',Validators.required],
+      emptype:['',Validators.required],
+      empstatus:['',Validators.required],
+      dateofconf:['',Validators.required],
+      company:['',Validators.required],
+      bu:['',Validators.required],
+      dept:['',Validators.required],
+      desig:['',Validators.required],
+      region:['',Validators.required],
+      branch:['',Validators.required],
+      reportmanager:['',Validators.required],
+      funmanager:['',Validators.required]
     })
   }
 

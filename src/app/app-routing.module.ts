@@ -24,11 +24,17 @@ const routes: Routes = [
        component:InboxComponent
      },
      {
-       path:'userprofile',
-       component:UserprofileComponent
-     }
+      path:'userprofile',
+      component:UserprofileComponent
+    },
+     {
+      path:'userprofile/:id',
+      component:UserprofileComponent
+    }
+   
    ]
- }
+ },
+
 ];
 
 @NgModule({
