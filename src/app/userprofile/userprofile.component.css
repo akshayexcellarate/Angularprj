@@ -15,7 +15,6 @@ mat-sidenav{
    margin: 16px;
    margin-left: 32px;
    display:flex;
-   
    font-size: 1rem;
    color:black;
    border-radius: 10px;
@@ -116,7 +115,9 @@ height: calc(100vh - 65px);
   
 .formfield1{
     margin-left: 90px;
-    
+ 
+   
+ 
 }
 .title1{
 text-align: center;
@@ -131,10 +132,16 @@ color:crimson;
 .header-content{
     line-height: 40px;
     background: #eceff1;
-    padding: 7px 15px;
+     /* padding: 7px 15px; */
     padding-top: 7px;
-    padding-right: 15px;
+    /* padding-right: 15px; */
     padding-bottom: 7px;
-    padding-left: 80px;
+    /* padding-left: 80px;  */
     width: 100%;
+  
 }
+
+h5{
+    font-weight: 550;
+}
+

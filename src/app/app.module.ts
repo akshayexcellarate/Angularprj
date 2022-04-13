@@ -24,6 +24,7 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RequestComponent } from './request/request.component';
 import { NotificationComponent } from './notification/notification.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,8 @@ import { NotificationComponent } from './notification/notification.component';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
