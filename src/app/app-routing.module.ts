@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { InboxComponent } from './inbox/inbox.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
+import { RequestComponent } from './request/request.component';
 
 const routes: Routes = [
  {
@@ -24,8 +25,8 @@ const routes: Routes = [
        component:InboxComponent
      },
      {
-      path:'userprofile',
-      component:UserprofileComponent
+      path:'request',
+      component:RequestComponent
     },
      {
       path:'userprofile/:id',

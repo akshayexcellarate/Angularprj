@@ -3,8 +3,10 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
     <img class="avatar mat-elevation-z8" src="/assets/image/profile.jpeg" />
-    <h4 class="name">Akshay Kadam</h4>
-    <p class="designation">Software Engineer</p>
+    <h4 class="name">{{user.firtsName}} {{user.lastName}}</h4>
+    <p class="designation">{{user.region}}</p>
+    <p class="designation">{{user.desig}}</p>
+    <p class="designation">{{user.funmanager}}</p>
 
     <mat-divider></mat-divider>
     <button mat-button a routerLink="/dashboard" style="margin-right:100px;">
