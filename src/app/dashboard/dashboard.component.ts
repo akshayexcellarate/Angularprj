@@ -1,6 +1,7 @@
 import { Component, OnInit ,ViewChild} from '@angular/core';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
+import { UserDetails } from '../UserDetails';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class DashboardComponent implements OnInit {
 
-
+   us=new UserDetails();
   constructor(private route:Router ) { }
 
   ngOnInit(): void {
