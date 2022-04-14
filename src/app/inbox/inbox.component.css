@@ -10,7 +10,7 @@ mat-sidenav-container{
         background: #1b2436;
         color :white;
         border-radius: 10px;
-        padding: 10px;
+        /* padding: 10px; */
         text-align: center;
       }    
  .menu-button{
@@ -30,6 +30,7 @@ mat-sidenav-container{
    .left{
        width: 30vw;
        background-color:rgb(45, 53, 71);
+       /* overflow: auto; */
    }  
    .right{
     width: 70vw;
@@ -88,14 +89,9 @@ mat-sidenav-container{
     font-size: .857em;
     text-align: left;
     font-weight: 600;
-    padding: 0 0 0 24px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 24px;
-    border: 0 solid transparent;
-    border-top-color: transparent;
-    border-top-style: solid;
+   
+     padding-left: 24px;
+   
     border-top-width: 0px;
     border-right-color: transparent;
     border-right-style: solid;
@@ -106,20 +102,14 @@ mat-sidenav-container{
     border-left-color: transparent;
     border-left-style: solid;
     border-left-width: 0px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
+
     border-bottom: 2px solid hsla(0,0%,100%,.1);
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: rgba(255, 255, 255, 0.1);
     letter-spacing: -.1px;
-    outline: none;
-    outline-color: initial;
-    outline-style: none;
-    outline-width: initial;
+
+
  }
  .mat-icon{
     background-repeat: no-repeat;
@@ -135,9 +125,8 @@ mat-sidenav-container{
     padding-top: 16px;
     padding-right: 16px;
     padding-bottom: 16px;
-    padding-left: 24px
-px
-;
+    padding-left: 24px;
+
     cursor: pointer;
     height: 105px;
  }

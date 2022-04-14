@@ -100,7 +100,6 @@ height: calc(100vh - 65px);
 }
 .sidebar-menu>li{
     margin-right: 40px;
-
     position: relative;
     padding: 0;
     padding-top: 0px;

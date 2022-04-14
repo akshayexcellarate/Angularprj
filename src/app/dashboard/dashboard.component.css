@@ -9,9 +9,10 @@
   tab-size:30%;
 flex-shrink:0 ;
   background-color: rgb(244, 244, 244);
-  overflow-x: hidden;
-  overflow-y:auto;
+  /* overflow-x: hidden;
+  overflow-y:auto; */
   text-align: justify;
+   overflow: auto; 
 }  
 
 /* .child::-webkit-scrollbar-track{
@@ -73,20 +74,21 @@ mat-sidenav{
 
 }
 .content{
- height: calc(100vh - 98px);
- margin: 13px;
- margin-left: 30px;
- /* display:flex; */
- 
+ /* height: calc(100vh - 98px); */
+  margin: 13px;
+ margin-left: 30px; 
+min-height: 100vh;
+  display:flex; 
  font-size: 1rem;
  color:black;
  border-radius: 10px;
 }
 mat-sidenav-container{
-
 height: calc(100vh - 65px);
+
+
 }
-mat-sidenav-container::-webkit-scrollbar{
+/* mat-sidenav-container::-webkit-scrollbar{
  display: none;
 }
 mat-sidenav-container::-webkit-scrollbar{
@@ -94,7 +96,7 @@ mat-sidenav-container::-webkit-scrollbar{
  }
  .mat-drawer-inner-container::-webkit-scrollbar {
    display: block;
-}
+} */
 .menu-button{
   width: 100%;
   display: flex;
@@ -149,20 +151,22 @@ padding-right: 30px;
 .right{
   width: 45vw;
   background-color: rgb(235, 235, 235);
-
-  background-repeat: no-repeat;
+  overflow-y:scroll;
+   height:100vh;
+  /* background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
-  height: calc(100vh - 42px);
+  height: calc(100vh - 42px); */
 } 
 .left{
   width: 60vw;
   background-color:rgb(244, 244, 244);
-  overflow-x: hidden;
-  overflow-y:auto;
-  tab-size:30%;
+   overflow-y:scroll;
+   height:100vh;
+   
+   
+  /* tab-size:30%; */
 
- 
     text-align: justify;
 }
 .tab-card{
@@ -173,4 +177,28 @@ padding-right: 30px;
 #container{
   min-height: 100vh;
   display:flex;
-}  
+} 
+.uppercase{
+  color: #1b2436;
+    opacity: .66;
+    /* filter: alpha(opacity=66); */
+    font-weight: 550;
+    margin: 0 0 8px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-left: 55px;
+    line-height: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+} 
+.shorcut{
+  color: #cacfd5;
+  font-size: 1.571em;
+  font-weight: 600;
+  padding: 0 0 24px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 24px;
+  padding-left: 30px;
+}
