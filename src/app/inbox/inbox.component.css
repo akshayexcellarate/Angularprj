@@ -52,12 +52,8 @@ mat-sidenav-container{
     margin: 16px;
     margin-left: 32px;
     display:flex;
-    
-    
-    
     font-size: 1rem;
     color:black;
-
     border-radius: 10px;
  }
  .clsbox{
