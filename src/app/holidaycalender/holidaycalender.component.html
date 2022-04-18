@@ -1,0 +1,152 @@
+<app-toolbar></app-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>  
+      <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200"/> -->
+ 
+      <button mat-button class="menu-button" a routerLink="/userprofile" >
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <div class="content mat-elevation-z4">
+            <div id="container">
+      <div class="cls-holiday">
+    <div class="container-fluid">
+        <div class="row">
+            <span>
+                <b>Holidays</b>
+                for year,2022 
+                <mat-select>
+                   
+                </mat-select>
+            </span> 
+           
+            <div>
+            </div>   
+        </div>
+        <div class="subtitle" style="width:100%;">
+         <h5 style="margin-left: 3px;"> You can see list of holidays in calender year</h5>
+        </div>
+        <!-- <mat-form-field appearance="fill">
+            <mat-label>Year</mat-label>
+            <mat-select>
+              <mat-option value="2021">2021</mat-option>
+              <mat-option value="2022">2022</mat-option>
+            </mat-select>
+          </mat-form-field> -->
+        <div>
+            <div class="row1">
+            <div class="col" style="flex:0 0 100%;flex-basis: 100%;max-width:100%;">
+            <table class="holiday">
+                <tbody>
+                    <tr style="background-color: rgba(246,249,252,.66);">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Makara Sankranti</span>
+                        </td>
+                        <td class="dayname">Friday</td>
+                        <td class="dayname">14 jan 2022</td>
+                        <td class="dayname">Fixed Holiday</td>
+                    </tr>
+                    <tr style="background-color:#fff">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Republic Day</span>
+                        </td>
+                        <td class="dayname">Wednesday</td>
+                        <td class="dayname">26 jan 2022</td>
+                        <td class="dayname">National Holiday</td>
+                    </tr>
+                    <tr style="background-color:rgba(246,249,252,.66);">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Holi(Dhulivandan)</span>
+                        </td>
+                        <td class="dayname">Friday</td>
+                        <td class="dayname">18 Mar 2022</td>
+                        <td class="dayname">Fixed holiday</td>
+                    </tr>
+                    <tr style="background-color:#fff">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Good Friday</span>
+                        </td>
+                        <td class="dayname">Friday</td>
+                        <td class="dayname">15 Apr 2022</td>
+                        <td class="dayname">Holiday</td>
+                    </tr>
+                    <tr style="background-color:rgba(246,249,252,.66);">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Ramzan Eid</span>
+                        </td>
+                        <td class="dayname">Tuesday</td>
+                        <td class="dayname">03 May 2022</td>
+                        <td class="dayname">Holiday</td>
+                    </tr>
+                    <tr style="background-color:#fff">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Independence Day</span>
+                        </td>
+                        <td class="dayname">Fixed Holiday</td>
+                        <td class="dayname">15 Aug 2022</td>
+                        <td class="dayname">Fixed Holiday</td>
+                    </tr>
+                    <tr style="background-color:rgba(246,249,252,.66)">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Ganesh Chaturthi</span>
+                        </td>
+                        <td class="dayname">Wednesday</td>
+                        <td class="dayname">31 Aug 2022</td>
+                        <td class="dayname">Fixed holiday</td>
+                    </tr>
+                    <tr style="background-color:#fff">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Anant Chaturdashi</span>
+                        </td>
+                        <td class="dayname">Friday</td>
+                        <td class="dayname">09 Sep 2022</td>
+                        <td class="dayname">Fixed holiday</td>
+                    </tr>
+                    <tr style="background-color:rgba(246,249,252,.66)">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Vijaya Dashami</span>
+                        </td>
+                        <td class="dayname">Wednesday</td>
+                        <td class="dayname">05 Oct 2022</td>
+                        <td class="dayname">Fixed Holiday</td>
+                    </tr>
+                    <tr style="background-color:#fff">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Diwali</span>
+                        </td>
+                        <td class="dayname">Monday</td>
+                        <td class="dayname">24 Oct 2022</td>
+                        <td class="dayname">Fixed Holiday</td>
+                    </tr>
+                    <tr style="background-color:rgba(246,249,252,.66)">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Diwali</span>
+                        </td>
+                        <td class="dayname">Tuesday</td>
+                        <td class="dayname">25 Oct 2022</td>
+                        <td class="dayname">Holiday</td>
+                    </tr>
+                      <tr style="background-color:#fff">
+                        <td style="width:235px;height:38px;line-height:38px;font-family:'Montserrat,sans-serif';font-size: 1em;font-weight: 600;color: rgba(38,46,62,.87);padding-right:32px;padding-left:32px;">
+                           <span matTooltipPosition="top" class="card-title">Diwali</span>
+                        </td>
+                        <td class="dayname">Wednesday</td>
+                        <td class="dayname">26 Oct 2022</td>
+                        <td class="dayname">Fixed Holiday</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div> 
+ </div>
+ </div>
+
+     </mat-sidenav-content> 
+     
+   </mat-sidenav-container>
+
+

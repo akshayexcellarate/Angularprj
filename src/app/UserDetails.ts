@@ -20,6 +20,7 @@ export class UserDetails {
      region!:string;
 	 branch!: string; 
      reportmanager!:string; 
+     image!:Blob;
  funmanager!: string;
     constructor( ){
      

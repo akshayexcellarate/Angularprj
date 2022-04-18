@@ -25,6 +25,12 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RequestComponent } from './request/request.component';
 import { NotificationComponent } from './notification/notification.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { HolidaycalenderComponent } from './holidaycalender/holidaycalender.component';
+import { ClearanceComponent } from './clearance/clearance.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +42,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     UserprofileComponent,
     ToolbarComponent,
     RequestComponent,
-    NotificationComponent
+    NotificationComponent,
+    HolidaycalenderComponent,
+    ClearanceComponent
 
   ],
   imports: [
@@ -54,7 +62,10 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatListModule,
     MatDividerModule,
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTableModule,
+    MatTabsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

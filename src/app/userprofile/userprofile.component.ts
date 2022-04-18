@@ -49,7 +49,8 @@ this.id=(this.activate.snapshot.paramMap.get('id'));
       region:['',Validators.required],
       branch:['',Validators.required],
       reportmanager:['',Validators.required],
-      funmanager:['',Validators.required]
+      funmanager:['',Validators.required],
+      image:['',Validators.required]
     })
   }
 

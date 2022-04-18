@@ -2,7 +2,7 @@
 
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
-    <img class="avatar mat-elevation-z8" src="/assets/image/profile.jpeg" />
+    <img class="{{user.image}}" />
     <h4 class="name">{{user.firtsName}} {{user.lastName}}</h4>
     <p class="designation">{{user.region}}</p>
     <p class="designation">{{user.desig}}</p>
@@ -20,12 +20,12 @@
           </a>
         </li>
         <li>
-          <a class="submenu-1" href="">
+          <a class="submenu-1" href="Clearance">
             Clearance
           </a>
         </li>
         <li>
-          <a class="submenu-1" href="">
+          <a class="submenu-1" href="Holiday">
             Holiday calendar
           </a>
         </li>
