@@ -3,6 +3,7 @@ import { FormGroup,FormBuilder,Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RegistrationService } from '../registration.service';
 import { UserDetails } from '../UserDetails';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-userprofile',
@@ -10,17 +11,22 @@ import { UserDetails } from '../UserDetails';
   styleUrls: ['./userprofile.component.css']
 })
 export class UserprofileComponent implements OnInit {
+  log!:LoginComponent;
   productForm!:FormGroup;
   userlist!:UserDetails[];
   user= new UserDetails();
   id!:any;
+  
   constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute) { }
 
   ngOnInit(): void {
 this.id=(this.activate.snapshot.paramMap.get('id'));
+// this.id=this.log.logId;
+
  this.api.fetchUserDetailsById(this.id).subscribe(
    data=>{
          console.log("data occured");
+         
         this.user=data; 
         console.log(this.user);
         

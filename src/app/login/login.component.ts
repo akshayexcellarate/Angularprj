@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 user =new User();
 msg='';
 myimage:string="assets/image/login.jpg";
+public logId!:any;
   constructor(private service:RegistrationService,private _route:Router) { }
 
   ngOnInit(): void {
@@ -26,6 +27,10 @@ myimage:string="assets/image/login.jpg";
     this.service.loginUserFromRemote(this.user).subscribe(
       data=>{
         console.log("response recived")
+      //  console.log(data.id);
+       this.logId=data.id;
+       console.log(this.logId);
+    
     this._route.navigate(['/dashboard'])
     } ,
     error=>{
@@ -34,5 +39,15 @@ myimage:string="assets/image/login.jpg";
       
   }
     )
+
+    // this.service.fetchLoginId(this.user).subscribe(
+    //   data=>{
+    //     console.log("");
+    //   },
+    //   error=>{
+    //     console.log("error");
+    //   }
+    // )
   }
+
 }
