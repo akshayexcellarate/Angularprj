@@ -1,0 +1,36 @@
+<app-toolbar></app-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>  
+      <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200"/> -->
+ 
+      <button mat-button class="menu-button" a routerLink="/userprofile/1" >
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <div class="content mat-elevation-z4">
+           
+            <div id="container">
+             <div class="contenthr" >
+             <div class="feedS" style="margin-bottom: 20px;">
+              <div class="sbox">
+                <img src="/assets/image/search-inbox.svg" style="margin-left: 6px;margin-right:6px;"> 
+                   <mat-form-field class="form-field">
+                    <input  matInput placeholder="search keyword">
+                  </mat-form-field>   
+            </div>
+            </div>
+            <h3 style="line-height: 24px;color:#242a3c; font-family: sans-serif;font-size:14px; font-weight:600;">HR Handbook</h3>
+             </div> 
+
+           
+   </div>
+   <mat-card style="height:40px;width:25%;margin-top:15%;">
+ <img src="/assets/image/Policy.png">
+ <span style="font-size: small; margin-left: 10px; font-weight: 400;cursor: pointer;"> Subject:Employee Handbook</span>
+</mat-card>
+   </div>
+ 
+     </mat-sidenav-content> 
+     
+   </mat-sidenav-container>

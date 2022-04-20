@@ -8,6 +8,8 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 import { RequestComponent } from './request/request.component';
 import { ClearanceComponent } from './clearance/clearance.component';
 import { HolidaycalenderComponent } from './holidaycalender/holidaycalender.component';
+import { LetterComponent } from './letter/letter.component';
+import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
 
 const routes: Routes = [
  {
@@ -45,6 +47,14 @@ const routes: Routes = [
     {
       path:'Holiday',
       component:HolidaycalenderComponent
+    },
+    {
+      path:'Letter',
+      component:LetterComponent
+    },
+    {
+      path:'HRhandbook',
+      component:HrhandbookComponent
     }
 
    

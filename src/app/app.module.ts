@@ -30,6 +30,9 @@ import { ClearanceComponent } from './clearance/clearance.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSelectModule} from '@angular/material/select';
+import { LetterComponent } from './letter/letter.component';
+import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
+import { AttendenceComponent } from './attendence/attendence.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import {MatSelectModule} from '@angular/material/select';
     RequestComponent,
     NotificationComponent,
     HolidaycalenderComponent,
-    ClearanceComponent
+    ClearanceComponent,
+    LetterComponent,
+    HrhandbookComponent,
+    AttendenceComponent
 
   ],
   imports: [
