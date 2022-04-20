@@ -9,6 +9,7 @@ import { User } from '../user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
   loginForm!: FormGroup;
 user =new User();
 msg='';
@@ -29,8 +30,8 @@ public logId!:any;
         console.log("response recived")
       //  console.log(data.id);
        this.logId=data.id;
-       console.log(this.logId);
-    
+        console.log(this.logId);
+       this.service.setData(this.logId)
     this._route.navigate(['/dashboard'])
     } ,
     error=>{
@@ -49,5 +50,5 @@ public logId!:any;
     //   }
     // )
   }
-
+dd=this.logId
 }

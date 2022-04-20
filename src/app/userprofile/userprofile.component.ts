@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { FormGroup,FormBuilder,Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RegistrationService } from '../registration.service';
@@ -11,7 +11,7 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./userprofile.component.css']
 })
 export class UserprofileComponent implements OnInit {
-  log!:LoginComponent;
+@Input() ddata:any
   productForm!:FormGroup;
   userlist!:UserDetails[];
   user= new UserDetails();
@@ -26,8 +26,10 @@ this.id=(this.activate.snapshot.paramMap.get('id'));
  this.api.fetchUserDetailsById(this.id).subscribe(
    data=>{
          console.log("data occured");
-         
-        this.user=data; 
+          // console.log(this.login.logId);
+        this.id=this.api.getData()
+        console.log(this.id);
+          this.user=data; 
         console.log(this.user);
         
    },

@@ -9,9 +9,14 @@ import { LoginComponent } from './login/login.component';
   providedIn: 'root'
 })
 export class RegistrationService {
-    logid!:LoginComponent;
+    id!:any
   constructor(private http:HttpClient , private route:Router) { }
-
+setData(idd: any){
+this.id=idd
+}
+getData(){
+  return this.id
+}
   public loginUserFromRemote(user: User):Observable<any>{
  return this.http.post<any>("http://localhost:8008/login",user)
   }

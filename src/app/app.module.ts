@@ -33,6 +33,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { LetterComponent } from './letter/letter.component';
 import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
 import { AttendenceComponent } from './attendence/attendence.component';
+import { RegistrationService } from './registration.service';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,7 @@ import { AttendenceComponent } from './attendence/attendence.component';
     MatTabsModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [RegistrationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
