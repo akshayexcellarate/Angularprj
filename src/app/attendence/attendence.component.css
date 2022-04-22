@@ -60,8 +60,6 @@
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -84,3 +82,38 @@
     color: #282c3f;
     font-weight: 600;
 }
+mat-sidenav{
+    margin: 16px;
+    width: 80px;
+    border-right: none;
+    background: #1b2436;
+    color :white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    text-align: center;
+  }
+  #container{
+    min-height: 100vh;
+    display:flex;
+}
+mat-sidenav-container{
+
+    height: calc(100vh - 65px);
+    }
+    /* .content{
+        height: calc(100vh - 98px);
+        margin: 16px;
+        margin-left: 32px;
+        display:flex;
+        font-size: 1rem;
+        color:black;
+        border-radius: 10px;
+     }          */
+     .menu-button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1rem;
+        margin-top: 25px;
+      }

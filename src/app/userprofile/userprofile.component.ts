@@ -3,7 +3,7 @@ import { FormGroup,FormBuilder,Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RegistrationService } from '../registration.service';
 import { UserDetails } from '../UserDetails';
-import { LoginComponent } from '../login/login.component';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-userprofile',
@@ -18,8 +18,10 @@ export class UserprofileComponent implements OnInit {
   id!:any;
   pass!:any
   
-  constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute) { }
-
+  constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute, private _location:Location) { }
+  backClicked(){
+    this._location.back();
+  }
   ngOnInit(): void {
 this.id=(this.activate.snapshot.paramMap.get('id'));
 // this.id=this.log.logId;

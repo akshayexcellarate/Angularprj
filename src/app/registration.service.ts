@@ -38,5 +38,9 @@ getHoliday(){
     return this.http.get<any>("http://localhost:8080/getuserdetailsbyid/"+id);
  }
 
+ public fetchUserLoginDetailById(id:any):Observable<any>{
+   return this.http.get<any>("http://localhost:8008/login/"+id);
+ }
+
 
 }
