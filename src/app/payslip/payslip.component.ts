@@ -2,17 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { RegistrationService } from '../registration.service';
 
 @Component({
-  selector: 'app-letter',
-  templateUrl: './letter.component.html',
-  styleUrls: ['./letter.component.css']
+  selector: 'app-payslip',
+  templateUrl: './payslip.component.html',
+  styleUrls: ['./payslip.component.css']
 })
-export class LetterComponent implements OnInit {
+export class PayslipComponent implements OnInit {
 id!:any
   constructor(private api:RegistrationService) { }
 
   ngOnInit(): void {
-    this.id=this.api.getData()
-    console.log(this.id);
+    this.id=this.api.getData();
   }
 
 }

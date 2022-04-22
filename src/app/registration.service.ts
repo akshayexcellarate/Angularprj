@@ -10,12 +10,20 @@ import { LoginComponent } from './login/login.component';
 })
 export class RegistrationService {
     id!:any
+    Holi!:any
   constructor(private http:HttpClient , private route:Router) { }
 setData(idd: any){
 this.id=idd
 }
 getData(){
   return this.id
+}
+
+setHoliday(holi:any){
+this.Holi=holi
+}
+getHoliday(){
+  return this.Holi
 }
   public loginUserFromRemote(user: User):Observable<any>{
  return this.http.post<any>("http://localhost:8008/login",user)

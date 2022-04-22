@@ -34,7 +34,15 @@ import { LetterComponent } from './letter/letter.component';
 import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
 import { AttendenceComponent } from './attendence/attendence.component';
 import { RegistrationService } from './registration.service';
+import { PayslipComponent } from './payslip/payslip.component';
+import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin
+]);
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +59,8 @@ import { RegistrationService } from './registration.service';
     ClearanceComponent,
     LetterComponent,
     HrhandbookComponent,
-    AttendenceComponent
+    AttendenceComponent,
+    PayslipComponent
 
   ],
   imports: [
@@ -72,9 +81,10 @@ import { RegistrationService } from './registration.service';
     MatTooltipModule,
     MatTableModule,
     MatTabsModule,
-    MatSelectModule
+    MatSelectModule,
+    FullCalendarModule
   ],
-  providers: [RegistrationService],
+  providers: [RegistrationService,HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

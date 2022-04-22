@@ -10,6 +10,8 @@ import { ClearanceComponent } from './clearance/clearance.component';
 import { HolidaycalenderComponent } from './holidaycalender/holidaycalender.component';
 import { LetterComponent } from './letter/letter.component';
 import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
+import { PayslipComponent } from './payslip/payslip.component';
+import { AttendenceComponent } from './attendence/attendence.component';
 
 const routes: Routes = [
  {
@@ -55,6 +57,14 @@ const routes: Routes = [
     {
       path:'HRhandbook',
       component:HrhandbookComponent
+    },
+    {
+      path:'Payslip',
+      component:PayslipComponent
+    },
+    {
+      path:'Attendence',
+      component:AttendenceComponent
     }
 
    

@@ -15,7 +15,7 @@ user =new User();
 msg='';
 myimage:string="assets/image/login.jpg";
 public logId!:any;
-  constructor(private service:RegistrationService,private _route:Router) { }
+  constructor(public service:RegistrationService,public _route:Router) { }
 
   ngOnInit(): void {
     this.loginForm=new FormGroup({

@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
    this.id=this.api.getData()
-   console.log(this.id);
+   
   }
   
   logOut(){

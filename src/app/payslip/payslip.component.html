@@ -1,0 +1,41 @@
+<app-toolbar></app-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>  
+      <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200"/> -->
+ 
+      <button mat-button class="menu-button" a routerLink="/userprofile/{{this.id}}" >
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <div class="content mat-elevation-z4">
+            <div id="container">
+                <div class="letter-cont">
+                <div class="container=fluid">
+                    <div class="row">
+                        <div class="col-md" style="margin-left: 50px;">
+                            <h3 class="main-head">Payslip</h3>
+                            
+                        </div>
+                        <div class="sbtitle" style="width: 80%;">
+                            Password for payslip is combination of last four digits of PAN (ALKPM015M) and month-year of Date of joining, say March, 2017. (Password: 015M0317)
+                        </div>
+                        
+                    </div>
+                    <div class="search">
+                        <img src="/assets/image/search-inbox.svg">
+                        <input type="text" placeholder="Search..." class="sb">
+                  </div>
+                   <img src="/assets/image/Letter-empty.png" class="bgimage">
+                  </div>
+                  <div class="nps">
+                      NO PAYSLIP
+                  </div>
+                </div>
+                </div>
+               
+             </div> 
+     </mat-sidenav-content> 
+     
+   </mat-sidenav-container>
+
