@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RegistrationService } from '../registration.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-letter',
@@ -7,12 +7,13 @@ import { RegistrationService } from '../registration.service';
   styleUrls: ['./letter.component.css']
 })
 export class LetterComponent implements OnInit {
-id!:any
-  constructor(private api:RegistrationService) { }
 
+  constructor(private _location:Location) { }
+  backClicked(){
+    this._location.back();
+  }
   ngOnInit(): void {
-    this.id=this.api.getData()
-    console.log(this.id);
+
   }
 
 }

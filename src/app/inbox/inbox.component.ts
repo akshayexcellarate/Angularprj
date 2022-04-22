@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-inbox',
   templateUrl: './inbox.component.html',
@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InboxComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private _location:Location) { }
+  backClicked(){
+    this._location.back();
+  }
   ngOnInit(): void {
   }
 

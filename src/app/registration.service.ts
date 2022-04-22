@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
   providedIn: 'root'
 })
 export class RegistrationService {
+  user!:UserDetails
     id!:any
     Holi!:any
   constructor(private http:HttpClient , private route:Router) { }
@@ -23,6 +24,7 @@ setHoliday(holi:any){
 this.Holi=holi
 }
 getHoliday(){
+ 
   return this.Holi
 }
   public loginUserFromRemote(user: User):Observable<any>{

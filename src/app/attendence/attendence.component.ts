@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
+import { RegistrationService } from '../registration.service';
+import { Location } from '@angular/common';
+import { User } from '../user';
 
 @Component({
   selector: 'app-attendence',
@@ -16,9 +19,12 @@ export class AttendenceComponent implements OnInit {
   };
 
  
-  constructor() { }
-
+  constructor(private api:RegistrationService,private _location:Location) { }
+  backClicked(){
+    this._location.back();
+  }
   ngOnInit(): void {
+  
   }
 
 }
