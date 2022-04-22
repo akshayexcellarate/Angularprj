@@ -16,6 +16,7 @@ export class UserprofileComponent implements OnInit {
   userlist!:UserDetails[];
   user= new UserDetails();
   id!:any;
+  pass!:any
   
   constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute) { }
 
@@ -27,10 +28,12 @@ this.id=(this.activate.snapshot.paramMap.get('id'));
    data=>{
          console.log("data occured");
           // console.log(this.login.logId);
-        this.id=this.api.getData()
-        console.log(this.id);
+        // this.id=this.api.getData()
+        // console.log(this.id);
           this.user=data; 
         console.log(this.user);
+        this.pass=this.user.id
+        this.api.setHoliday(this.pass)
         
    },
    error=> console.log("Exception occured")
