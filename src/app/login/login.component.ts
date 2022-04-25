@@ -28,10 +28,12 @@ public logId!:any;
     this.service.loginUserFromRemote(this.user).subscribe(
       data=>{
         console.log("response recived")
+        this.service.global=true;
       //  console.log(data.id);
        this.logId=data.id;
         console.log(this.logId);
        this.service.setData(this.logId)
+       localStorage.setItem('token',data.emailId)
     this._route.navigate(['/dashboard'])
     } ,
     error=>{
