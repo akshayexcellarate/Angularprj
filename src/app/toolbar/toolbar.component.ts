@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistrationService } from '../registration.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:RegistrationService) { }
 
   ngOnInit(): void {
   }
-
+logOut(){
+  this.api.global=false
+  console.log(this.api.global);
+  console.log("logout");
+}
 }

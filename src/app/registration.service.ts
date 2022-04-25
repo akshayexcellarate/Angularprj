@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
   providedIn: 'root'
 })
 export class RegistrationService {
+  global!:any
   user!:UserDetails
     id!:any
     Holi!:any

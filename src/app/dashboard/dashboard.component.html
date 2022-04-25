@@ -3,7 +3,7 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item a routerLink="/">Logout
+    <button mat-menu-item (click)="logOut()">Logout
       <mat-icon><b>power_settings_new</b></mat-icon>
     </button>
     <button mat-menu-item>settings
@@ -57,14 +57,14 @@
               <figure
                 style="margin-block-start:0em;margin-block-end: 1em;margin-inline-start:0px;margin-inline-end: 40px;">
                 <img src="/assets/image/bday-cap.png" style="width:20px;">
-                <div style="width: 32px; height: 32px; ">
+               <span style="margin-left: 50px;">hii</span>
+               
+                <div style="width: 32px; height: 32px;">
                   <div
                     style="text-align: center;border-radius: 100%; text-transform:uppercase;color:rgb(255, 255, 255); background-color:rgb(127, 140, 141);font: 10px/32px Helvetica, Arial, sans-serif;">
                     ARK </div>
                 </div>
-
               </figure>
-
             </div>
             <div>
             </div>
@@ -101,25 +101,127 @@
         <mat-divider></mat-divider>
         <h5 style="margin-left:30px; font-size:1rem;font-family:'Times New Roman', Times, serif;"><b>Feeds</b></h5>
         <mat-card class="card2">
-          <textarea cols="70" rows="3"  placeholder="Write Somethin here...">
-             
+          <div class="wishcard">
+            <div class="user">
+              <div style="size: 32px;position: relative;" class="img-fluid">
+                <div
+                  style="text-align: center;border-radius: 100%; width: 32px;height:32px; text-transform:uppercase;color:rgb(255, 255, 255); background-color:rgb(241, 196, 15);font: 10px/32px Helvetica, Arial, sans-serif;">
+                  HSG </div>
+                <!-- <div class="avtar-cont" style="width:32px;height:32px;">
+               <div class="avtar-content">
+                 HSG
+               </div>
+              </div> -->
+              </div>
+              <div class="user-details">
+                <div class="u-desg" style="width: 70%;box-sizing: border-box;">
+                  <b class="inline-block">HEMA SRINU GADELA</b>
+                </div>
+                <small class="dblock">Apr 21, 2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="feed-text">
+            <div class="feedtext">
+              <figure class="img">
+                <img alt="badge" style="width: 75px;" src="/assets/image/team_player.png">
+              </figure>
+              <div class="feedcontent">
+                <p style="margin: 0!important;">
+                  <b class="cursor-pointer" style="color:#007afc;font-weight:700;font-size: small;">YEDUKONDALU
+                    THOTAKURA </b>
+                  <span class="spin">
+                    Appreciate your extended support to the CIBD & TAP Projects. You are a supportive team player. Good
+                    Job.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- <textarea cols="70" rows="3" placeholder="Write Somethin here...">
+
           </textarea>
-          <button mat-raised-button color="primary"
-          matBadge="8" matBadgePosition="before" matBadgeColor="accent">
-        Post Text
-      </button>
-     
-      <button mat-raised-button color="primary"
-      matBadge="8" matBadgePosition="before" matBadgeColor="primary" style="margin: 20px; background-color: rgb(18, 112, 18);">
-    Post Image
-  </button>
-  
-        </mat-card>
-        <mat-card class="card3">
+          <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+            Post Text
+          </button>
+
+          <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="primary"
+            style="margin: 20px; background-color: rgb(18, 112, 18);">
+            Post Image
+          </button> -->
 
         </mat-card>
         <mat-card class="card3">
+          <div class="wishcard">
+            <div class="user">
+              <div style="size: 32px;position: relative;" class="img-fluid">
+                <div
+                  style="text-align: center;border-radius: 100%; width: 32px;height:32px; text-transform:uppercase;color:rgb(255, 255, 255); background-color:rgb(211, 84, 0);font: 10px/32px Helvetica, Arial, sans-serif;">
+                  VS </div>
 
+              </div>
+              <div class="user-details">
+                <div class="u-desg" style="width: 70%;box-sizing: border-box;">
+                  <b class="inline-block">Veerendra Sirangu</b>
+                </div>
+                <small class="dblock">Apr 14, 2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="feed-text">
+            <div class="feedtext">
+              <figure class="img">
+                <img alt="badge" style="width: 75px;" src="/assets/image/womens_day.png">
+              </figure>
+              <div class="feedcontent">
+                <p style="margin: 0!important;">
+                  <b class="cursor-pointer" style="color:#007afc;font-weight:700;font-size: small;">Rama Sravanthi
+                    Chodisetti </b>
+                  <span class="spin">
+                    Appreciate your creative thinking. Thank you for bringing your positive attitude to work every day.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </mat-card>
+        <mat-card class="card3">
+          <div class="wishcard">
+            <div class="user">
+              <div style="size: 32px;position: relative;" class="img-fluid">
+                <div
+                  style="text-align: center;border-radius: 100%; width: 32px;height:32px; text-transform:uppercase;color:rgb(255, 255, 255); background-color:rgb(211, 84, 0);font: 10px/32px Helvetica, Arial, sans-serif;">
+                  VS </div>
+
+              </div>
+              <div class="user-details">
+                <div class="u-desg" style="width: 70%;box-sizing: border-box;">
+                  <b class="inline-block">Veerendra Sirangu</b>
+                </div>
+                <small class="dblock">Apr 14, 2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="feed-text">
+            <div class="feedtext">
+              <figure class="img">
+                <img alt="badge" style="width: 75px;" src="/assets/image/team_player.png">
+              </figure>
+              <div class="feedcontent">
+                <p style="margin: 0!important;">
+                  <b class="cursor-pointer" style="color:#007afc;font-weight:700;font-size: small;">Mittapelli
+                    Rakesh</b>
+                  <span class="spin">
+                    Your achievement is the direct result of your dedicated effort towards reaching your goal being a
+                    perfect team player.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+          </div>
         </mat-card>
       </div>
       <div class="right">
@@ -131,7 +233,8 @@
           MARK ATTENDENCE</h6>
         <mat-card style="max-width: 80%; margin-left:40px;height:50px;">
           <button mat-button
-            style="margin-left: 10%; color:white; background-color:#00bfa5; width:80%; margin-top: 5px;">
+            style="margin-left: 10%; color:white; background-color:#00bfa5; width:80%; margin-top: 5px;"
+            (click)="attendence()">
             Mark Attendence
           </button>
         </mat-card>
@@ -152,9 +255,10 @@
           <h6 class="uppercase">Inbox</h6>
         </div>
         <div>
-          <mat-card style="max-width: 80%; margin-left:40px; height:30px;">
+          <mat-card style="max-width: 80%; margin-left:40px; height:30px;  cursor:pointer;">
             <div>
-              <img src="/assets/image/icon-inbox.svg" style="margin-left:3%; float:left;height:35px;width:90px;">
+              <img src="/assets/image/icon-inbox.svg" style="margin-left:3%; float:left;height:35px;width:90px;"
+                (click)="travel()">
             </div>
             <div style="margin-top: 3px;">
               <p style="font-size: 1em; font-weight:400;  color: #121730; opacity:1!important;">
@@ -190,7 +294,6 @@
                   <p>00:00</p>
                 </li>
               </ul>
-
               <a routerLink="calender" style="display: flex!important; cursor: pointer;">
                 <div style="margin-left:30px; ">
                   <img src="/assets/image/icon-thunbs-up.svg">
@@ -205,18 +308,16 @@
         </div>
         <div>
           <mat-card style="max-width: 80%; margin-left:40px; height:60px;">
-            <div>
-              <p style="line-height: 20px;font-size: small;font-weight:500;"> Please keep your profile updated </p>
-              <div style="width: 40px; margin-top: 10px;">
-                <div
-                  style="text-align: center; border-radius: 100%; text-transform: uppercase; color: rgb(255, 255, 255); background-color: rgb(52, 152, 219); font: 10px / 32px Helvetica, Arial, sans-serif;">
-                  ARK
-                </div>
+            <p style="line-height: 20px;font-size: small;font-weight:500;"> Please keep your profile updated </p>
 
+            <div style="width: 40px; margin-top: 10px;">
+              <div
+                style="text-align: center; border-radius: 100%; text-transform: uppercase; color: rgb(255, 255, 255); background-color: rgb(52, 152, 219); font: 10px / 32px Helvetica, Arial, sans-serif;">
+                ARK
               </div>
+
             </div>
             <div>
-
             </div>
           </mat-card>
         </div>
@@ -243,49 +344,9 @@
         <div>
           <h6 class="uppercase">Calender</h6>
         </div>
-        <mat-card>
-
-        </mat-card>
+        <mat-calendar [selected]="selectedDate"  (selectedChange)="onSelect($event)" class="calender"></mat-calendar>
+      
       </div>
-
-
-      <!-- <router-outlet></router-outlet>
-      <div class="container">
-        <div style class="child1">
-          <h1 class="text1">Hi Akshay ! </h1>
-          <mat-card class="card1" style="background-image:url(/assets/image/celeberation-pattern.png)">
-            <h5
-              style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-              <b>Today's celebrations</b></h5>
-          </mat-card>
-          <mat-divider></mat-divider>
-          <h5 style="margin-left:30px; font-size:1rem;font-family:'Times New Roman', Times, serif;"><b>Feeds</b></h5>
-          <mat-card class="card2">
-
-          </mat-card>
-          <mat-card class="card3">
-
-          </mat-card>
-        </div>
-        <div style="background-color: rgb(235, 235, 235);" class="container2">
-
-          <button mat-button style="margin-top: 20px; margin-left: 30px; color:#0ee2e2;">
-            <mat-icon style="font-size:medium; margin-top: 3px;">settings</mat-icon>
-            Customize
-          </button>
-
-          <h6 style="font-size: 10px; color: #1b2436; margin-left: 55px; font-family: Arial, Helvetica, sans-serif; ">
-            MARK ATTENDENCE</h6>
-          <mat-card style="max-width: 70%; margin-left:55px;height:60px;">
-            <button mat-button style="margin-left: 30%; color:white; background-color:#0ee2e2;">
-              Mark Attendence
-            </button>
-          </mat-card>
-          <mat-card style="max-width:70%; margin-left:55px;height:50px; margin-top:30px; font-size:small;">
-            Have any queries ? I am here to help
-          </mat-card>
-        </div>
-      </div> -->
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

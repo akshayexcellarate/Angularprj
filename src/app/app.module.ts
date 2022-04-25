@@ -38,6 +38,8 @@ import { PayslipComponent } from './payslip/payslip.component';
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -82,9 +84,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatTableModule,
     MatTabsModule,
     MatSelectModule,
-    FullCalendarModule
+    FullCalendarModule,
+    MatDatepickerModule,
+    MatNativeDateModule 
   ],
-  providers: [RegistrationService,HttpClientModule],
+  providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
+    MatNativeDateModule  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
