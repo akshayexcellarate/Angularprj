@@ -23,7 +23,7 @@ export class DashboardComponent implements OnInit {
   console.log(event);
   this.selectedDate= event;
 }   
-  constructor(private route:Router,private api:RegistrationService) { }
+  constructor(private route:Router,public api:RegistrationService) { }
   ngOnInit(): void {
    this.id=this.api.getData()
    console.log(this.user.emailId);
