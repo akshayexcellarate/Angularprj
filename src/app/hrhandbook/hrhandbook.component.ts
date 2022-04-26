@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegistrationService } from '../registration.service';
-import { Location } from '@angular/common';
+import { Location, NgIf } from '@angular/common';
 @Component({
   selector: 'app-hrhandbook',
   templateUrl: './hrhandbook.component.html',
@@ -8,9 +8,9 @@ import { Location } from '@angular/common';
 })
 export class HrhandbookComponent implements OnInit {
  id!:any
-  constructor(private api:RegistrationService, private _location:Location) { }
+  constructor(public api:RegistrationService, private _location:Location) { }
   backClicked(){
-    this._location.back();
+  this._location.back();
   }
   ngOnInit(): void {
     this.id=this.api.getData();
