@@ -40,6 +40,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -86,7 +87,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatSelectModule,
     FullCalendarModule,
     MatDatepickerModule,
-    MatNativeDateModule 
+    MatNativeDateModule,
+    MatProgressBarModule
   ],
   providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
     MatNativeDateModule  ],
