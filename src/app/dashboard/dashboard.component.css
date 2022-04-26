@@ -297,3 +297,71 @@ figure{
 .special-date {
   background-color: red;
 }
+.profilebar{
+  font-size: .857em;
+  color: #6f778b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+
+}
+.row{
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.cold{
+  padding: 0!important;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+.wishcard{
+  margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    max-height: 112px;
+    align-items: flex-start!important;
+    display: flex!important;
+}
+.useravt{
+  width: 32px;
+    position: relative;
+    display: flex;
+}
+.bdaycap{
+  top: -25px;
+  right: auto;
+  bottom: auto;
+  left: -60px;
+  position: absolute;
+  z-index: 9;
+  z-index: auto;
+  width: 24px;
+}
+.userdet{
+  width: calc(100% - 32px);
+  padding-left: 13px;
+}
+.ddblock{
+  font-size: .757em;
+  color: #007afc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  display: block!important;
+}
+
+
