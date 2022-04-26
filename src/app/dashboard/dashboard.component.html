@@ -18,7 +18,9 @@
 
   <div class="mtmail">
     <button mat-button>
-      <mat-icon matBadgeColor="warn" matBadgeSize="small">notifications</mat-icon>
+      <mat-icon matBadgeColor="warn" matBadgeSize="small"
+        >notifications</mat-icon
+      >
     </button>
   </div>
 </mat-toolbar>
@@ -27,17 +29,42 @@
   <mat-sidenav mode="side" opened>
     <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200"/> -->
 
-    <button mat-button class="menu-button" matTooltip="Home" matTooltipPosition="right">
+    <button
+      mat-button
+      class="menu-button"
+      matTooltip="Home"
+      matTooltipPosition="right"
+    >
       <mat-icon>home</mat-icon>
     </button>
-    <button mat-button class="menu-button" matTooltip="Inbox" matTooltipPosition="right" a routerLink="/inbox">
+    <button
+      mat-button
+      class="menu-button"
+      matTooltip="Inbox"
+      matTooltipPosition="right"
+      a
+      routerLink="/inbox"
+    >
       <mat-icon>markunread</mat-icon>
     </button>
-    <button mat-button class="menu-button" matTooltip="Request" matTooltipPosition="right" a routerLink="/request">
+    <button
+      mat-button
+      class="menu-button"
+      matTooltip="Request"
+      matTooltipPosition="right"
+      a
+      routerLink="/request"
+    >
       <mat-icon>how_to_reg</mat-icon>
     </button>
-    <button mat-button class="menu-button" matTooltip="Profile" matTooltipPosition="right" a
-      routerLink="/userprofile/{{ this.id }}">
+    <button
+      mat-button
+      class="menu-button"
+      matTooltip="Profile"
+      matTooltipPosition="right"
+      a
+      routerLink="/userprofile/{{ this.id }}"
+    >
       <mat-icon>person</mat-icon>
     </button>
   </mat-sidenav>
@@ -45,105 +72,130 @@
     <div class="content mat-elevation-z4">
       <div class="left">
         <h1 class="text1">Hi {{ this.userName }} !</h1>
-        <mat-card class="card1" style="background-image: url(/assets/image/celeberation-pattern.png)">
-          <h5 style="
+        <mat-card
+          class="card1"
+          style="background-image: url(/assets/image/celeberation-pattern.png)"
+        >
+          <h5
+            style="
               font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
                 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            ">
+            "
+          >
             <b>Today's celebrations</b>
           </h5>
-            <div>
-              <div class="cardcont">
-               <div class="row">
-              <div class="cold">
-              <div class="wishcard">
-               <div class="useravt">
-                <figure class="bdaycap">
-                 <img src="/assets/image/bday-cap.png" style="width: 100%;vertical-align: middle;">
-                </figure>
-                <div style="width: 32px; height: 32px; margin-left:-10px;">
-                  <div style="
-                      text-align: center;
-                      border-radius: 100%;
-                      text-transform: uppercase;
-                      color: rgb(255, 255, 255);
-                      background-color: rgb(127, 140, 141);
-                      font: 10px/32px Helvetica, Arial, sans-serif;
-                      margin-bottom: 40px;
-  
-                    ">
-                    ARK
+          <div>
+            <div class="cardcont">
+              <div class="row">
+                <div class="cold">
+                  <div class="wishcard">
+                    <div class="useravt">
+                      <figure class="bdaycap">
+                        <img
+                          src="/assets/image/bday-cap.png"
+                          style="width: 100%; vertical-align: middle"
+                        />
+                      </figure>
+                      <div
+                        style="width: 32px; height: 32px; margin-left: -10px"
+                      >
+                        <div
+                          style="
+                            text-align: center;
+                            border-radius: 100%;
+                            text-transform: uppercase;
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(127, 140, 141);
+                            font: 10px/32px Helvetica, Arial, sans-serif;
+                            margin-bottom: 40px;
+                          "
+                        >
+                          ARK
+                        </div>
+                      </div>
+                    </div>
+                    <div class="userdet">
+                      <b class="ddblock">Akshay kadam</b>
+                      <small style="font-size: 0.714em; width: 100%">
+                        Pune,BU-7</small
+                      >
+                    </div>
                   </div>
                 </div>
-               </div>
-               <div class="userdet">
-                 <b class="ddblock">Akshay kadam</b>
-                 <small style="font-size: .714em; width: 100%;"> Pune,BU-7</small>
-               </div>
-               
-              </div>   
-            </div>
-            <div class="cold">
-              <div class="wishcard">
-               <div class="useravt">
-                <figure class="bdaycap">
-                 <img src="/assets/image/bday-cap.png" style="width: 100%;vertical-align: middle;">
-                </figure>
-                <div style="width: 32px; height: 32px; margin-left:-10px;">
-                  <div style="
-                      text-align: center;
-                      border-radius: 100%;
-                      text-transform: uppercase;
-                      color: rgb(255, 255, 255);
-                      background-color: rgb(117, 120, 241);
-                      font: 10px/32px Helvetica, Arial, sans-serif;
-                      margin-bottom: 40px;
-  
-                    ">
-                    GD
+                <div class="cold">
+                  <div class="wishcard">
+                    <div class="useravt">
+                      <figure class="bdaycap">
+                        <img
+                          src="/assets/image/bday-cap.png"
+                          style="width: 100%; vertical-align: middle"
+                        />
+                      </figure>
+                      <div
+                        style="width: 32px; height: 32px; margin-left: -10px"
+                      >
+                        <div
+                          style="
+                            text-align: center;
+                            border-radius: 100%;
+                            text-transform: uppercase;
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(117, 120, 241);
+                            font: 10px/32px Helvetica, Arial, sans-serif;
+                            margin-bottom: 40px;
+                          "
+                        >
+                          GD
+                        </div>
+                      </div>
+                    </div>
+                    <div class="userdet">
+                      <b class="ddblock">Gopalsetty Dinesh</b>
+                      <small style="font-size: 0.714em; width: 100%">
+                        Telangana</small
+                      >
+                    </div>
                   </div>
                 </div>
-               </div>
-               <div class="userdet">
-                 <b class="ddblock">Gopalsetty Dinesh</b>
-                 <small style="font-size: .714em; width: 100%;"> Telangana</small>
-               </div>
-               
-              </div>   
-            </div>
-            <div class="cold">
-              <div class="wishcard">
-               <div class="useravt">
-                <figure class="bdaycap">
-                 <img src="/assets/image/bday-cap.png" style="width: 100%;vertical-align: middle;">
-                </figure>
-                <div style="width: 32px; height: 32px; margin-left:-10px;">
-                  <div style="
-                      text-align: center;
-                      border-radius: 100%;
-                      text-transform: uppercase;
-                      color: rgb(255, 255, 255);
-                      background-color: rgb(11, 150, 151);
-                      font: 10px/32px Helvetica, Arial, sans-serif;
-                      margin-bottom: 40px;
-  
-                    ">
-                    MM
+                <div class="cold">
+                  <div class="wishcard">
+                    <div class="useravt">
+                      <figure class="bdaycap">
+                        <img
+                          src="/assets/image/bday-cap.png"
+                          style="width: 100%; vertical-align: middle"
+                        />
+                      </figure>
+                      <div
+                        style="width: 32px; height: 32px; margin-left: -10px"
+                      >
+                        <div
+                          style="
+                            text-align: center;
+                            border-radius: 100%;
+                            text-transform: uppercase;
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(11, 150, 151);
+                            font: 10px/32px Helvetica, Arial, sans-serif;
+                            margin-bottom: 40px;
+                          "
+                        >
+                          MM
+                        </div>
+                      </div>
+                    </div>
+                    <div class="userdet">
+                      <b class="ddblock">Margani Monika</b>
+                      <small style="font-size: 0.714em; width: 100%">
+                        Telangana</small
+                      >
+                    </div>
                   </div>
                 </div>
-               </div>
-               <div class="userdet">
-                 <b class="ddblock">Margani Monika</b>
-                 <small style="font-size: .714em; width: 100%;"> Telangana</small>
-               </div>
-               
-              </div>   
-            </div>
-               </div>
               </div>
-            </div>  
-      
-        
+            </div>
+          </div>
+
           <!-- <mat-card style="float: left; margin-left: 10px; width: 25%; height: 40%">
             <div>
               <figure style="
@@ -222,18 +274,21 @@
           </mat-card>  -->
         </mat-card>
         <mat-divider></mat-divider>
-        <h5 style="
+        <h5
+          style="
             margin-left: 30px;
             font-size: 1rem;
             font-family: 'Times New Roman', Times, serif;
-          ">
+          "
+        >
           <b>Feeds</b>
         </h5>
         <mat-card class="card2">
           <div class="wishcard">
             <div class="user">
               <div style="size: 32px; position: relative" class="img-fluid">
-                <div style="
+                <div
+                  style="
                     text-align: center;
                     border-radius: 100%;
                     width: 32px;
@@ -242,7 +297,8 @@
                     color: rgb(255, 255, 255);
                     background-color: rgb(241, 196, 15);
                     font: 10px/32px Helvetica, Arial, sans-serif;
-                  ">
+                  "
+                >
                   HSG
                 </div>
                 <!-- <div class="avtar-cont" style="width:32px;height:32px;">
@@ -259,16 +315,22 @@
               </div>
             </div>
           </div>
-         
+
           <div class="feed-text">
             <div class="feedtext">
               <figure class="img">
-                <img alt="badge" style="width: 75px" src="/assets/image/team_player.png" />
+                <img
+                  alt="badge"
+                  style="width: 75px"
+                  src="/assets/image/team_player.png"
+                />
               </figure>
               <div class="feedcontent">
                 <p style="margin: 0 !important">
-                  <b class="cursor-pointer" style="color: #007afc; font-weight: 700; font-size: small">YEDUKONDALU
-                    THOTAKURA
+                  <b
+                    class="cursor-pointer"
+                    style="color: #007afc; font-weight: 700; font-size: small"
+                    >YEDUKONDALU THOTAKURA
                   </b>
                   <span class="spin">
                     Appreciate your extended support to the CIBD & TAP Projects.
@@ -294,7 +356,8 @@
           <div class="wishcard">
             <div class="user">
               <div style="size: 32px; position: relative" class="img-fluid">
-                <div style="
+                <div
+                  style="
                     text-align: center;
                     border-radius: 100%;
                     width: 32px;
@@ -303,7 +366,8 @@
                     color: rgb(255, 255, 255);
                     background-color: rgb(211, 84, 0);
                     font: 10px/32px Helvetica, Arial, sans-serif;
-                  ">
+                  "
+                >
                   VS
                 </div>
               </div>
@@ -315,17 +379,22 @@
               </div>
             </div>
           </div>
-          
 
           <div class="feed-text">
             <div class="feedtext">
               <figure class="img">
-                <img alt="badge" style="width: 75px" src="/assets/image/womens_day.png" />
+                <img
+                  alt="badge"
+                  style="width: 75px"
+                  src="/assets/image/womens_day.png"
+                />
               </figure>
               <div class="feedcontent">
                 <p style="margin: 0 !important">
-                  <b class="cursor-pointer" style="color: #007afc; font-weight: 700; font-size: small">Rama Sravanthi
-                    Chodisetti
+                  <b
+                    class="cursor-pointer"
+                    style="color: #007afc; font-weight: 700; font-size: small"
+                    >Rama Sravanthi Chodisetti
                   </b>
                   <span class="spin">
                     Appreciate your creative thinking. Thank you for bringing
@@ -340,7 +409,8 @@
           <div class="wishcard">
             <div class="user">
               <div style="size: 32px; position: relative" class="img-fluid">
-                <div style="
+                <div
+                  style="
                     text-align: center;
                     border-radius: 100%;
                     width: 32px;
@@ -349,7 +419,8 @@
                     color: rgb(255, 255, 255);
                     background-color: rgb(211, 84, 0);
                     font: 10px/32px Helvetica, Arial, sans-serif;
-                  ">
+                  "
+                >
                   VS
                 </div>
               </div>
@@ -358,19 +429,25 @@
                   <b class="inline-block">Veerendra Sirangu</b>
                 </div>
                 <small class="dblock">Apr 14, 2022</small>
-
               </div>
             </div>
           </div>
           <div class="feed-text">
             <div class="feedtext">
               <figure class="img">
-                <img alt="badge" style="width: 75px" src="/assets/image/team_player.png" />
+                <img
+                  alt="badge"
+                  style="width: 75px"
+                  src="/assets/image/team_player.png"
+                />
               </figure>
               <div class="feedcontent">
                 <p style="margin: 0 !important">
-                  <b class="cursor-pointer" style="color: #007afc; font-weight: 700; font-size: small">Mittapelli
-                    Rakesh</b>
+                  <b
+                    class="cursor-pointer"
+                    style="color: #007afc; font-weight: 700; font-size: small"
+                    >Mittapelli Rakesh</b
+                  >
                   <span class="spin">
                     Your achievement is the direct result of your dedicated
                     effort towards reaching your goal being a perfect team
@@ -383,49 +460,65 @@
         </mat-card>
       </div>
       <div class="right">
-        <button mat-button style="margin-top: 20px; margin-left: 30px; color: #00bfa5">
-          <mat-icon style="font-size: medium; margin-top: 3px">settings</mat-icon>
+        <button
+          mat-button
+          style="margin-top: 20px; margin-left: 30px; color: #00bfa5"
+        >
+          <mat-icon style="font-size: medium; margin-top: 3px"
+            >settings</mat-icon
+          >
           Customize
         </button>
         <h6 class="uppercase">MARK ATTENDENCE</h6>
         <mat-card style="max-width: 80%; margin-left: 40px; height: 50px">
-          <button mat-button style="
+          <button
+            mat-button
+            style="
               margin-left: 10%;
               color: white;
               background-color: #00bfa5;
               width: 80%;
               margin-top: 5px;
-            " (click)="attendence()">
+            "
+            (click)="attendence()"
+          >
             Mark Attendence
           </button>
         </mat-card>
-        <mat-card style="
+        <mat-card
+          style="
             max-width: 80%;
             margin-left: 40px;
             height: 50px;
             margin-top: 30px;
-          ">
+          "
+        >
           <!-- <figure class="mo" style="align-items:center!important;">
                  <img src="/assets/image/icon-bot.svg">
               </figure> -->
           <div>
-            <img src="/assets/image/icon-bot.svg" style="
+            <img
+              src="/assets/image/icon-bot.svg"
+              style="
                 margin-left: 3%;
                 float: left;
                 height: 30px;
                 width: 70px;
                 cursor: pointer;
-              " />
+              "
+            />
           </div>
           <div style="margin-left: 5px; margin-top: 8px">
-            <p style="
+            <p
+              style="
                 font-size: 1em;
                 margin-left: 20%;
                 color: #1b2436;
                 opacity: 0.8;
                 font-weight: 400;
                 cursor: pointer;
-              ">
+              "
+            >
               Have any queries ? I am here to help
             </p>
           </div>
@@ -435,29 +528,39 @@
           <h6 class="uppercase">Inbox</h6>
         </div>
         <div>
-          <mat-card style="
+          <mat-card
+            style="
               max-width: 80%;
               margin-left: 40px;
               height: 30px;
               cursor: pointer;
-            ">
+            "
+          >
             <div>
-              <img src="/assets/image/icon-inbox.svg" style="margin-left: 3%; float: left; height: 35px; width: 90px"
-                (click)="travel()" />
+              <img
+                src="/assets/image/icon-inbox.svg"
+                style="margin-left: 3%; float: left; height: 35px; width: 90px"
+                (click)="travel()"
+              />
             </div>
             <div style="margin-top: 3px">
-              <p style="
+              <p
+                style="
                   font-size: 1em;
                   font-weight: 400;
                   color: #121730;
                   opacity: 1 !important;
-                ">
-                <b style="
+                "
+              >
+                <b
+                  style="
                     font-size: 30px;
                     color: #121730;
                     font-weight: 400;
                     margin-top: 10px;
-                  ">0</b>&nbsp;&nbsp; Pending tasks
+                  "
+                  >0</b
+                >&nbsp;&nbsp; Pending tasks
               </p>
             </div>
           </mat-card>
@@ -470,37 +573,46 @@
             <div style="box-sizing: border-box; margin-bottom: 10%">
               <ul style="list-style: none; display: inline">
                 <li style="float: left; margin-left: 10%">
-                  <small style="
+                  <small
+                    style="
                       max-width: 100% !important;
                       color: #1b2436;
                       opacity: 0.66;
-                    ">
+                    "
+                  >
                     In
                   </small>
                   <p>-</p>
                 </li>
                 <li style="float: left; margin-left: 20%">
-                  <small style="
+                  <small
+                    style="
                       max-width: 100% !important;
                       color: #1b2436;
                       opacity: 0.66;
-                    ">
+                    "
+                  >
                     Out
                   </small>
                   <p>-</p>
                 </li>
                 <li style="float: left; margin-left: 20%">
-                  <small style="
+                  <small
+                    style="
                       max-width: 100% !important;
                       color: #1b2436;
                       opacity: 0.66;
-                    ">
+                    "
+                  >
                     Working hours
                   </small>
                   <p>00:00</p>
                 </li>
               </ul>
-              <a routerLink="calender" style="display: flex !important; cursor: pointer">
+              <a
+                routerLink="calender"
+                style="display: flex !important; cursor: pointer"
+              >
                 <div style="margin-left: 30px">
                   <img src="/assets/image/icon-thunbs-up.svg" />
                 </div>
@@ -518,7 +630,8 @@
             </p>
             <div class="user">
               <div style="size: 32px; position: relative" class="img-fluid">
-                <div style="
+                <div
+                  style="
                     text-align: center;
                     border-radius: 100%;
                     width: 32px;
@@ -527,30 +640,23 @@
                     color: rgb(255, 255, 255);
                     background-color: rgb(52, 152, 219);
                     font: 10px/32px Helvetica, Arial, sans-serif;
-                  ">
+                  "
+                >
                   ARK
                 </div>
-                
-                  
               </div>
- 
-            
 
-              <div class="user-details"> 
-              
-               <div class="profile" style="width: calc(100% - 80px); padding-left: 16px"> 
-               
-                   <b class="profilebar">Profile completion status</b>
-                  <div>
-                
-                    
-                  </div>
-                  
+              <div class="user-details">
+                <div
+                  class="profile"
+                  style="width: calc(100% - 80px); padding-left: 16px"
+                >
+                  <b class="profilebar">Profile completion status</b>
+                  <div></div>
                 </div>
-              
-               </div> 
+              </div>
             </div>
-          
+
             <!-- <div style="width: 40px; margin-top: 10px;">
             <div
                 style="text-align: center; border-radius: 100%; text-transform: uppercase; color: rgb(255, 255, 255); background-color: rgb(52, 152, 219); font: 10px / 32px Helvetica, Arial, sans-serif;">
@@ -558,8 +664,19 @@
               </div> 
 
              </div>  -->
-             <mat-progress-bar  mode="determinate" value="64" style="width: 50%; height: 10%; margin-left: 62px; border-radius: 16px;" ></mat-progress-bar>
-           <b style="float: right;font-weight: 500; font-size: small;" >64.71%</b>
+            <mat-progress-bar
+              mode="determinate"
+              value="64"
+              style="
+                width: 50%;
+                height: 10%;
+                margin-left: 62px;
+                border-radius: 16px;
+              "
+            ></mat-progress-bar>
+            <b style="float: right; font-weight: 500; font-size: small"
+              >64.71%</b
+            >
           </mat-card>
         </div>
         <div>
@@ -583,7 +700,11 @@
         <div>
           <h6 class="uppercase">Calender</h6>
         </div>
-        <mat-calendar [selected]="selectedDate" (selectedChange)="onSelect($event)" class="calender"></mat-calendar>
+        <mat-calendar
+          [selected]="selectedDate"
+          (selectedChange)="onSelect($event)"
+          class="calender"
+        ></mat-calendar>
       </div>
     </div>
   </mat-sidenav-content>

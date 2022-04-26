@@ -14,67 +14,64 @@ import { PayslipComponent } from './payslip/payslip.component';
 import { AttendenceComponent } from './attendence/attendence.component';
 
 const routes: Routes = [
- {
-   path: '',
-   component:AppComponent,
-   children:[
-     {
-       path:'',
-       component:LoginComponent
-     },
-     {
-       path:'dashboard',
-       component:DashboardComponent
-     },
-     {
-       path:'inbox',
-       component:InboxComponent
-     },
-     {
-      path:'request',
-      component:RequestComponent
-    },
-     {
-      path:'userprofile/:id',
-      component:UserprofileComponent
-    },
-    {
-      path:'Clearance',
-      component:ClearanceComponent
-    },
-    {
-      path:'userprofile',
-      component:UserprofileComponent
-    },
-    {
-      path:'Holiday',
-      component:HolidaycalenderComponent
-    },
-    {
-      path:'Letter',
-      component:LetterComponent
-    },
-    {
-      path:'HRhandbook',
-      component:HrhandbookComponent
-    },
-    {
-      path:'Payslip',
-      component:PayslipComponent
-    },
-    {
-      path:'Attendence',
-      component:AttendenceComponent
-    }
-
-   
-   ]
- },
-
+  {
+    path: '',
+    component: AppComponent,
+    children: [
+      {
+        path: '',
+        component: LoginComponent,
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'inbox',
+        component: InboxComponent,
+      },
+      {
+        path: 'request',
+        component: RequestComponent,
+      },
+      {
+        path: 'userprofile/:id',
+        component: UserprofileComponent,
+      },
+      {
+        path: 'Clearance',
+        component: ClearanceComponent,
+      },
+      {
+        path: 'userprofile',
+        component: UserprofileComponent,
+      },
+      {
+        path: 'Holiday',
+        component: HolidaycalenderComponent,
+      },
+      {
+        path: 'Letter',
+        component: LetterComponent,
+      },
+      {
+        path: 'HRhandbook',
+        component: HrhandbookComponent,
+      },
+      {
+        path: 'Payslip',
+        component: PayslipComponent,
+      },
+      {
+        path: 'Attendence',
+        component: AttendenceComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

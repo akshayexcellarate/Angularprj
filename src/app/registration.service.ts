@@ -6,43 +6,40 @@ import { User } from './user';
 import { UserDetails } from './UserDetails';
 import { LoginComponent } from './login/login.component';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RegistrationService {
-  global: any
+  global: any;
 
-  user!:UserDetails
-    id!:any
-    Holi!:any
-  constructor(private http:HttpClient , private route:Router) { }
-setData(idd: any){
-this.id=idd
-}
-getData(){
-  return this.id
-}
-
-setHoliday(holi:any){
-this.Holi=holi
-}
-getHoliday(){
- 
-  return this.Holi
-}
-  public loginUserFromRemote(user: User):Observable<any>{
- return this.http.post<any>("http://localhost:8008/login",user)
+  user!: UserDetails;
+  id!: any;
+  Holi!: any;
+  constructor(private http: HttpClient, private route: Router) {}
+  setData(idd: any) {
+    this.id = idd;
   }
-// public fetchLoginId(ser:User):Observable<any>{
-//   return this.http.get<any>("http://localhost:8008/login/"+'akshay@gmail.com');
-// }
+  getData() {
+    return this.id;
+  }
 
- public fetchUserDetailsById(id:number):Observable<any>{
+  setHoliday(holi: any) {
+    this.Holi = holi;
+  }
+  getHoliday() {
+    return this.Holi;
+  }
+  public loginUserFromRemote(user: User): Observable<any> {
+    return this.http.post<any>('http://localhost:8008/login', user);
+  }
+  // public fetchLoginId(ser:User):Observable<any>{
+  //   return this.http.get<any>("http://localhost:8008/login/"+'akshay@gmail.com');
+  // }
+
+  public fetchUserDetailsById(id: number): Observable<any> {
     return this.http.get<any>(`http://localhost:8080/getuserdetailsbyid/${id}`);
- }
+  }
 
- public fetchUserLoginDetailById(id:any):Observable<any>{
-   return this.http.get<any>(`http://localhost:8008/login/${id}`);
- }
-
-
+  public fetchUserLoginDetailById(id: any): Observable<any> {
+    return this.http.get<any>(`http://localhost:8008/login/${id}`);
+  }
 }
