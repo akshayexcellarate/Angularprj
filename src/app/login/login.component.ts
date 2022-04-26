@@ -9,7 +9,7 @@ import { User } from '../user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
+  hide=true;
   loginForm!: FormGroup;
 user =new User();
 msg='';
