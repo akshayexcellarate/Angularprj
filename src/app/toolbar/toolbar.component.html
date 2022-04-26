@@ -3,7 +3,7 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item a routerLink="/">Logout
+      <button mat-menu-item (click)="logOut()">Logout
         <mat-icon><b>power_settings_new</b></mat-icon>
       </button>
       <button mat-menu-item>settings

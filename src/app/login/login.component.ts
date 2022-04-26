@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import {FormGroup,FormControl,Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { RegistrationService } from '../registration.service';
@@ -30,6 +30,7 @@ public logId!:any;
         console.log("response recived")
         this.service.global=true;
       //  console.log(data.id);
+      console.log(this.service.global);
        this.logId=data.id;
         console.log(this.logId);
        this.service.setData(this.logId)
@@ -37,6 +38,7 @@ public logId!:any;
     this._route.navigate(['/dashboard'])
     } ,
     error=>{
+      console.log(this.service.global);
       console.log("exception occured")
       this.msg="*Bad credentials, please enter valid email id and password";
       
