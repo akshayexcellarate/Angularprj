@@ -42,4 +42,7 @@ export class RegistrationService {
   public fetchUserLoginDetailById(id: any): Observable<any> {
     return this.http.get<any>(`http://localhost:8008/login/${id}`);
   }
+  public fetchBdayUser():Observable<any>{
+    return this.http.get<any>(`http://localhost:8080/getuserdetailsbydate`);
+  }
 }
