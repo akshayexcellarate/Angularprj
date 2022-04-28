@@ -329,7 +329,7 @@ figure{
     margin-bottom: 0px;
     margin-left: 0px;
     background-color: #fff;
-    padding: 16px;
+    padding: 10px;
     border-radius: 4px;
     max-height: 112px;
     align-items: flex-start!important;
@@ -351,8 +351,9 @@ figure{
   width: 24px;
 }
 .userdet{
-  width: calc(100% - 32px);
+  width: calc(80% - 32px);
   padding-left: 13px;
+
 }
 .ddblock{
   font-size: .757em;
@@ -362,6 +363,13 @@ figure{
   white-space: nowrap;
   font-weight: 500;
   display: block!important;
+}
+
+.branch{
+  font-size: 0.514em; 
+  font-weight: 500; 
+  width: 80%; 
+  margin-top: 0px;
 }
 
 

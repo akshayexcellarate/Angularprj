@@ -12,6 +12,24 @@ import { MatCalendarCellCssClasses } from '@angular/material/datepicker/calendar
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  bdayName1!:any
+  bdayName2!:any
+  bdayName3!:any
+  bdayLastName1!:any
+  bdayLastName2!:any
+  bdayLastName3!:any
+  shorFirst1!:any
+  shorFirst2!:any
+  shorFirst3!:any
+  shortSecond1!:any
+  shortSecond2!:any
+  shortSecond3!:any
+  bu1!:any
+  bu2!:any
+  bu3!:any
+  bdayBranch1!:any
+  bdayBranch2!:any
+  bdayBranch3!:any
   id!:any
   us=new UserDetails();
   getid!:any;
@@ -29,14 +47,42 @@ export class DashboardComponent implements OnInit {
    console.log(this.user.emailId);
    this.api.fetchUserLoginDetailById(this.id).subscribe(
     data=>{
-      console.log("response recived")
+      console.log("response received");
      this.userName=data.userName;
   } ,
   error=>{
-    console.log("exception occured")
+    console.log("exception occured");
     
 }
   )
+   this.api.fetchBdayUser().subscribe(
+     bday=>{
+       console.log("bday response received");
+        this.bdayName1=bday[0].firtsName;
+        this.bdayLastName1=bday[0].lastName;
+        this.bdayBranch1=bday[0].branch;
+        this.bu1=bday[0].bu;
+        this.shorFirst1=this.bdayName1.substr(0,1).toUpperCase();
+        this.shortSecond1=this.bdayLastName1.substr(0,1).toUpperCase();
+        this.bdayName2=bday[1].firtsName;
+        this.bdayLastName2=bday[1].lastName;
+        this.bdayBranch2=bday[1].branch;
+        this.bu2=bday[1].bu;
+        this.shorFirst2=this.bdayName2.substr(0,1).toUpperCase();
+        this.shortSecond2=this.bdayLastName2.substr(0,1).toUpperCase();
+        this.bdayName3=bday[2].firtsName;
+        this.bdayLastName3=bday[2].lastName;
+        this.bdayBranch3=bday[2].branch;
+        this.bu3=bday[2].bu;
+        this.shorFirst3=this.bdayName3.substr(0,1).toUpperCase();
+        this.shortSecond3=this.bdayLastName3.substr(0,1).toUpperCase();
+     },
+     error=>{
+       console.log("bday not found");
+     }
+     
+   )
+  
   }
   logOut(): void{
       this.api.global=false
