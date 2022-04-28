@@ -30,7 +30,9 @@ export class DashboardComponent implements OnInit {
   bdayBranch1!:any
   bdayBranch2!:any
   bdayBranch3!:any
+  imag1!:Blob
   id!:any
+   userr=new UserDetails();
   us=new UserDetails();
   getid!:any;
   user=new User();
@@ -62,6 +64,7 @@ export class DashboardComponent implements OnInit {
         this.bdayLastName1=bday[0].lastName;
         this.bdayBranch1=bday[0].branch;
         this.bu1=bday[0].bu;
+        this.imag1=bday[0].image;
         this.shorFirst1=this.bdayName1.substr(0,1).toUpperCase();
         this.shortSecond1=this.bdayLastName1.substr(0,1).toUpperCase();
         this.bdayName2=bday[1].firtsName;
@@ -76,6 +79,8 @@ export class DashboardComponent implements OnInit {
         this.bu3=bday[2].bu;
         this.shorFirst3=this.bdayName3.substr(0,1).toUpperCase();
         this.shortSecond3=this.bdayLastName3.substr(0,1).toUpperCase();
+        this.userr=bday;
+        console.log(this.userr);
      },
      error=>{
        console.log("bday not found");

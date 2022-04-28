@@ -372,4 +372,9 @@ figure{
   margin-top: 0px;
 }
 
-
+.avatar {
+  margin-top:0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
