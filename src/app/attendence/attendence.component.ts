@@ -15,6 +15,7 @@ export class AttendenceComponent implements OnInit {
     {title:'P',date:'2022-04-21', color:'lightgreen'},
     {title:'P',date:'2022-04-22', color:'lightgreen'} 
   ];
+
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
    events:this.events

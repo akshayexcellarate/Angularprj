@@ -5,6 +5,7 @@ import { RegistrationService } from '../registration.service';
 import { User } from '../user';
 import { Location } from '@angular/common';
 import { MatCalendarCellCssClasses } from '@angular/material/datepicker/calendar-body';
+import { MatCalendarHeader } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-dashboard',
@@ -42,7 +43,7 @@ export class DashboardComponent implements OnInit {
  onSelect(event: any){
   console.log(event);
   this.selectedDate= event;
-   
+  
 }   
   constructor(private route:Router,public api:RegistrationService) { }
   ngOnInit(): void {
@@ -81,7 +82,7 @@ export class DashboardComponent implements OnInit {
         this.shorFirst3=this.bdayName3.substr(0,1).toUpperCase();
         this.shortSecond3=this.bdayLastName3.substr(0,1).toUpperCase();
         this.userr=bday;
-        console.log(this.userr);
+        // console.log(this.userr);
      },
      error=>{
        console.log("bday not found");
