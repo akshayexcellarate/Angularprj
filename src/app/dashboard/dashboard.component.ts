@@ -42,6 +42,7 @@ export class DashboardComponent implements OnInit {
  onSelect(event: any){
   console.log(event);
   this.selectedDate= event;
+   
 }   
   constructor(private route:Router,public api:RegistrationService) { }
   ngOnInit(): void {
