@@ -17,6 +17,8 @@ export class UserprofileComponent implements OnInit {
   user= new UserDetails();
   id!:any;
   pass!:any
+  shortFirst!:any
+  shortSecond!:any
   
   constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute, private _location:Location) { }
   backClicked(){
@@ -36,6 +38,9 @@ this.id=(this.activate.snapshot.paramMap.get('id'));
         console.log(this.user);
         this.pass=this.user.id
         this.api.setHoliday(this.pass)
+        this.shortFirst=this.user.firtsName.substr(0,1).toUpperCase();
+        this.shortSecond=this.user.lastName.substr(0,1).toUpperCase();
+      
         
    },
    error=> console.log("Exception occured")

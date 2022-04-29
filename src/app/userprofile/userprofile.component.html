@@ -2,11 +2,26 @@
 
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
-    <!-- <img class="avatar mat-elevation-z8" src="/assets/image/profile.jpeg"/> -->
-    <img
+    <!-- <img class="avatar mat-elevation-z8" src="/assets/image/profile.jpeg"/>--> 
+    <!-- <img
       class="avatar mat-elevation-z8"
       src="data:image/jpeg;base64,{{ user.image }}"
-    />
+    />  -->
+    <div 
+    style="
+      text-align: center;
+      height: 25%;
+      border-radius: 50%;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      background-color: rgb(52, 152, 219);
+     font: 50px/50px Helvetica, Arial, sans-serif; 
+      margin-bottom: 0px;
+    ">
+    <div style="font-size:54px; font: weight 400px;;padding-top: 40px;">
+      {{this.shortFirst}}{{this.shortSecond}}
+    </div>
+    </div>
     <h4 class="name">{{ user.firtsName }} {{ user.lastName }}</h4>
     <p class="designation">{{ user.region }}</p>
     <p class="designation">{{ user.desig }}</p>
