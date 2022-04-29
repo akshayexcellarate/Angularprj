@@ -362,3 +362,6 @@ figure {
   height: 35px;
   border-radius: 50%;
 }
+mat-calender::selection{
+  color: red;
+}
