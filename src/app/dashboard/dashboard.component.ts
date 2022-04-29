@@ -32,6 +32,8 @@ export class DashboardComponent implements OnInit {
   bdayBranch2!:any
   bdayBranch3!:any
   imag1!:Blob
+  imag2!:Blob
+  imag3!:Blob
   id!:any
    userr=new UserDetails();
   us=new UserDetails();
@@ -73,12 +75,14 @@ export class DashboardComponent implements OnInit {
         this.bdayLastName2=bday[1].lastName;
         this.bdayBranch2=bday[1].branch;
         this.bu2=bday[1].bu;
+        this.imag2=bday[1].image
         this.shorFirst2=this.bdayName2.substr(0,1).toUpperCase();
         this.shortSecond2=this.bdayLastName2.substr(0,1).toUpperCase();
         this.bdayName3=bday[2].firtsName;
         this.bdayLastName3=bday[2].lastName;
         this.bdayBranch3=bday[2].branch;
         this.bu3=bday[2].bu;
+        this.imag3=bday[2].image
         this.shorFirst3=this.bdayName3.substr(0,1).toUpperCase();
         this.shortSecond3=this.bdayLastName3.substr(0,1).toUpperCase();
         this.userr=bday;

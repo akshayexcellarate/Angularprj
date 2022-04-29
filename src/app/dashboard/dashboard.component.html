@@ -99,7 +99,7 @@
                       <div
                         style="width: 32px; height: 32px; margin-left: -10px"
                       >
-                        <div
+                        <div *ngIf="!this.imag1"
                           style="
                             text-align: center;
                             border-radius: 100%;
@@ -109,10 +109,9 @@
                             font: 10px/32px Helvetica, Arial, sans-serif;
                             margin-bottom: 40px;
                           ">
-                          <!-- <img class="avatar" src="data:image/jpeg;base64,{{this.imag1}}"/> -->
-                          {{this.shorFirst1}} {{this.shortSecond1}}
-                        
-                        </div> 
+                           {{this.shorFirst1}} {{this.shortSecond1}}
+                          </div> 
+                          <img *ngIf="this.imag1" class="avatar" src="data:image/jpeg;base64,{{this.imag1}}"/>
                       </div>
                     </div>
                     <div class="userdet">
@@ -136,7 +135,10 @@
                       <div
                         style="width: 32px; height: 32px; margin-left: -10px"
                       >
-                        <div
+                      <div>
+                        <img *ngIf="this.imag2" class="avatar" src="data:image/jpeg;base64,{{this.imag2}}"/>
+                      </div>
+                        <div *ngIf="!this.imag2"
                           style="
                             text-align: center;
                             border-radius: 100%;
@@ -171,7 +173,11 @@
                       <div
                         style="width: 32px; height: 32px; margin-left: -10px"
                       >
-                        <div
+                      <div *ngIf="this.imag3">
+                        <img  class="avatar" src="data:image/jpeg;base64,{{this.imag3}}"/>
+                      </div>
+                      
+                        <div *ngIf="!this.imag3"
                           style="
                             text-align: center;
                             border-radius: 100%;
@@ -184,6 +190,7 @@
                         >
                           {{this.shorFirst3}} {{this.shortSecond3}}
                         </div>
+                       
                       </div>
                     </div>
                     <div class="userdet">
