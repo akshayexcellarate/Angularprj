@@ -3,11 +3,11 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
     <!-- <img class="avatar mat-elevation-z8" src="/assets/image/profile.jpeg"/>--> 
-    <!-- <img
+    <img *ngIf="user.image"
       class="avatar mat-elevation-z8"
       src="data:image/jpeg;base64,{{ user.image }}"
-    />  -->
-    <div 
+    /> 
+    <div *ngIf="!user.image"
     style="
       text-align: center;
       height: 25%;
