@@ -28,9 +28,6 @@ export class UserprofileComponent implements OnInit {
   }
   openDialog() {
     this.dialog.open(QrcodeComponent, {
-      data: {
-        animal: 'panda',
-      },
     });
   }
   ngOnInit(): void {
