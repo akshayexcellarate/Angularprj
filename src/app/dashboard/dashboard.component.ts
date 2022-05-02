@@ -6,6 +6,8 @@ import { User } from '../user';
 import { Location } from '@angular/common';
 import { MatCalendarCellCssClasses } from '@angular/material/datepicker/calendar-body';
 import { MatCalendarHeader } from '@angular/material/datepicker';
+import { MatDialog } from '@angular/material/dialog';
+import { QrcodeComponent } from '../qrcode/qrcode.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -47,7 +49,16 @@ export class DashboardComponent implements OnInit {
   this.selectedDate= event;
   
 }   
-  constructor(private route:Router,public api:RegistrationService) { }
+  constructor(private route:Router,public api:RegistrationService ,public dialog:MatDialog) { }
+ 
+  openDialog() {
+    this.dialog.open(QrcodeComponent, {
+      data: {
+        animal: 'panda',
+      },
+    });
+  }
+ 
   ngOnInit(): void {
    this.id=this.api.getData()
    console.log(this.user.emailId);
