@@ -103,7 +103,7 @@ mat-divider {
     color: #bdc7da !important;
     letter-spacing: .3px;
     width: 100%;
-
+    text-decoration: none;
 }
 
 .sidebar-menu>li {
