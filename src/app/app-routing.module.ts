@@ -12,6 +12,7 @@ import { LetterComponent } from './letter/letter.component';
 import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
 import { PayslipComponent } from './payslip/payslip.component';
 import { AttendenceComponent } from './attendence/attendence.component';
+import { QrcodeComponent } from './qrcode/qrcode.component';
 
 const routes: Routes = [
   {
@@ -59,13 +60,17 @@ const routes: Routes = [
         component: HrhandbookComponent,
       },
       {
-        path: 'Payslip',
+        path: 'payslip',
         component: PayslipComponent,
       },
       {
         path: 'Attendence',
         component: AttendenceComponent,
       },
+      {
+        path:'qrcode',
+        component:QrcodeComponent
+      }
     ],
   },
 ];
