@@ -87,8 +87,9 @@
           <div>
             <div class="cardcont">
               <div class="row">
-                <div class="cold">
-                  <div class="wishcard">
+                <div  class="cold">
+                  <b *ngIf="!this.bdayName1 && this.bdayName2 && this.bdayName3" class="ddblock">No celebrations Today</b>
+                  <div *ngIf="this.bdayName1" class="wishcard">
                     <div class="useravt">
                       <figure class="bdaycap">
                         <img
@@ -124,7 +125,7 @@
                   </div>
                 </div>
                 <div class="cold">
-                  <div class="wishcard">
+                  <div *ngIf="this.bdayName2" class="wishcard">
                     <div class="useravt">
                       <figure class="bdaycap">
                         <img
@@ -162,7 +163,7 @@
                   </div>
                 </div>
                 <div class="cold">
-                  <div class="wishcard">
+                  <div *ngIf="this.bdayName2" class="wishcard">
                     <div class="useravt">
                       <figure class="bdaycap">
                         <img
@@ -198,11 +199,12 @@
                       <small class="branch" style="margin-right: 3px;">
                       {{this.bdayBranch3}}{{this.bu3}}</small
                       >
-                     
                     </div>
                   </div>
                 </div>
               </div>
+            
+              <span class="arrow-circle"></span>
             </div>
           </div>
 

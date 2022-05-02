@@ -365,3 +365,21 @@ figure {
 mat-calender::selection{
   color: red;
 }
+.arrow-circle{
+  top: calc(50% - 19px);
+  right: -2px;
+  bottom: 0;
+  left: auto;
+  position: absolute;
+  z-index: 9;
+  width: 2.15714em;
+  height: 2.15714em;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #262e3e;
+  border-radius: 96px;
+  background-size: 14px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 23%);
+  cursor: pointer;
+  background-image: url(/assets/image/right-arrow-forward.svg);
+}
