@@ -1,4 +1,4 @@
-.cls-holiday{
+.cls-holiday {
     padding: 30.5px 17px 30px;
     padding-top: 30.5px;
     padding-right: 17px;
@@ -11,6 +11,7 @@
     margin-bottom: 0px;
     margin-left: auto;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 15px;
@@ -18,43 +19,46 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: 15px;
     margin-left: 15px;
 }
-mat-sidenav-container{
+
+mat-sidenav-container {
 
     height: calc(100vh - 65px);
-    }
+}
 
-    mat-sidenav{
-        margin: 16px;
-        width: 80px;
-        border-right: none;
-        background: #1b2436;
-        color :white;
-        border-radius: 10px;
-        /* padding: 10px; */
-        text-align: center;
-      }    
- .menu-button{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 1rem;
-        margin-top: 25px;
-      }
+mat-sidenav {
+    margin: 16px;
+    width: 80px;
+    border-right: none;
+    background: #1b2436;
+    color: white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    text-align: center;
+}
 
-.container{
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+.container {
     display: grid;
-    height:85vh;
+    height: 85vh;
     grid-template-columns: auto auto;
-  }
+}
 
-  /* .content{
+/* .content{
     height: calc(100vh - 98px);
     margin: 16px;
     margin-left: 32px;
@@ -66,7 +70,7 @@ mat-sidenav-container{
 
 
 
- .tab-card{
+.tab-card {
     padding: 16px 16px 16px 24px;
     padding-top: 16px;
     padding-right: 16px;
@@ -75,24 +79,27 @@ mat-sidenav-container{
 
     cursor: pointer;
     height: 105px;
- }
- p{
+}
+
+p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: #929caf;
- }
- .mat-form-field {
+}
+
+.mat-form-field {
     display: inline-block;
     position: relative;
     text-align: left;
 }
-.subtitle{
+
+.subtitle {
     font-weight: 300;
     /* line-height: 1.6; */
-    font-size:medium;
+    font-size: medium;
     color: #28314b;
     margin: 7px 0 30px 1px;
     margin-top: 7px;
@@ -103,12 +110,14 @@ mat-sidenav-container{
     z-index: 1;
     padding-right: 0px;
 }
+
 .row1 {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .holiday {
     border-radius: 4px;
     border-top-left-radius: 4px;
@@ -148,8 +157,8 @@ mat-sidenav-container{
     display: block;
     white-space: nowrap;
 }
-.dayname{
-    font-weight: 400;
-    color: rgba(38,46,62,.7);
-}
 
+.dayname {
+    font-weight: 400;
+    color: rgba(38, 46, 62, .7);
+}

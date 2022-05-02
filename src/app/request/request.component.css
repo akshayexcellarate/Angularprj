@@ -1,142 +1,151 @@
-mat-sidenav-container{
+mat-sidenav-container {
 
-    height: calc(100vh - 65px);
-    }
+   height: calc(100vh - 65px);
+}
 
-    mat-sidenav{
-        margin: 16px;
-        width: 80px;
-        border-right: none;
-        background: #1b2436;
-        color :white;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-      }    
- .menu-button{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 1rem;
-        margin-top: 25px;
-      
-       
-      }
-   #container{
-       min-height: 100vh;
-       display:flex;
-   } 
-   .left{
-       width: 30vw;
-       background-color:rgb(45, 53, 71);
-   }  
-   .right{
-    width: 70vw;
-    background-color: rgb(226, 248, 237);
-    background-image: url(/assets/image/inbox-blank.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
-    height: calc(100vh - 42px);
-} 
-.container{
-    display: grid;
-    height:85vh;
-    grid-template-columns: auto auto;
-  }
+mat-sidenav {
+   margin: 16px;
+   width: 80px;
+   border-right: none;
+   background: #1b2436;
+   color: white;
+   border-radius: 10px;
+   padding: 10px;
+   text-align: center;
+}
 
-  .content{
-    height: calc(100vh - 98px);
-    margin: 16px;
-    margin-left: 32px;
-    display:flex;
-    
-    
-    
-    font-size: 1rem;
-    color:black;
+.menu-button {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   font-size: 1rem;
+   margin-top: 25px;
 
-    border-radius: 10px;
- }
- .clsbox{
-    display: flex;
-    flex-direction: column;
-  
- }
- .clsinbox{
-    font-size: 65px;
-    font-weight: 800;
-    color: rgba(162,172,183,.5);
-    position: absolute;
-    right: 20%;
-    top: 10%;
-    line-height: 64px;
- } 
- .clsinboxsmall{
-    font-size: 16px;
-    color: rgba(40,44,63,.72);
-    font-weight: 300;
 
- }
- .inbox-tab{
-    height: 50px;
-    background-color: #00c7b4;
-    line-height: 50px;
-    width: 100%;
-    color: #fff;
-    font-size: .857em;
-    text-align: left;
-    font-weight: 600;
-    padding: 0 0 0 24px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 24px;
-    border: 0 solid transparent;
-    border-top-color: transparent;
-    border-top-style: solid;
-    border-top-width: 0px;
-    border-right-color: transparent;
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-bottom-color: rgba(255, 255, 255, 0.1);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-left-color: transparent;
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-bottom: 2px solid hsla(0,0%,100%,.1);
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.1);
-    letter-spacing: -.1px;
-    outline: none;
-    outline-color: initial;
-    outline-style: none;
-    outline-width: initial;
- }
- .tab-card{
-    padding: 16px 16px 16px 24px;
-    padding-top: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-left: 24px
-px
-;
-    cursor: pointer;
-    height: 105px;
- }
- p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #929caf;
- }
+}
+
+#container {
+   min-height: 100vh;
+   display: flex;
+}
+
+.left {
+   width: 30vw;
+   background-color: rgb(45, 53, 71);
+}
+
+.right {
+   width: 70vw;
+   background-color: rgb(226, 248, 237);
+   background-image: url(/assets/image/inbox-blank.png);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: contain;
+   height: calc(100vh - 42px);
+}
+
+.container {
+   display: grid;
+   height: 85vh;
+   grid-template-columns: auto auto;
+}
+
+.content {
+   height: calc(100vh - 98px);
+   margin: 16px;
+   margin-left: 32px;
+   display: flex;
+
+
+
+   font-size: 1rem;
+   color: black;
+
+   border-radius: 10px;
+}
+
+.clsbox {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.clsinbox {
+   font-size: 65px;
+   font-weight: 800;
+   color: rgba(162, 172, 183, .5);
+   position: absolute;
+   right: 20%;
+   top: 10%;
+   line-height: 64px;
+}
+
+.clsinboxsmall {
+   font-size: 16px;
+   color: rgba(40, 44, 63, .72);
+   font-weight: 300;
+
+}
+
+.inbox-tab {
+   height: 50px;
+   background-color: #00c7b4;
+   line-height: 50px;
+   width: 100%;
+   color: #fff;
+   font-size: .857em;
+   text-align: left;
+   font-weight: 600;
+   padding: 0 0 0 24px;
+   padding-top: 0px;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   padding-left: 24px;
+   border: 0 solid transparent;
+   border-top-color: transparent;
+   border-top-style: solid;
+   border-top-width: 0px;
+   border-right-color: transparent;
+   border-right-style: solid;
+   border-right-width: 0px;
+   border-bottom-color: rgba(255, 255, 255, 0.1);
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   border-left-color: transparent;
+   border-left-style: solid;
+   border-left-width: 0px;
+   border-image-source: initial;
+   border-image-slice: initial;
+   border-image-width: initial;
+   border-image-outset: initial;
+   border-image-repeat: initial;
+   border-bottom: 2px solid hsla(0, 0%, 100%, .1);
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(255, 255, 255, 0.1);
+   letter-spacing: -.1px;
+   outline: none;
+   outline-color: initial;
+   outline-style: none;
+   outline-width: initial;
+}
+
+.tab-card {
+   padding: 16px 16px 16px 24px;
+   padding-top: 16px;
+   padding-right: 16px;
+   padding-bottom: 16px;
+   padding-left: 24px px;
+   cursor: pointer;
+   height: 105px;
+}
+
+p {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   color: #929caf;
+}

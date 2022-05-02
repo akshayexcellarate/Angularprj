@@ -4,6 +4,7 @@
   height: 85vh;
   grid-template-columns: auto auto;
 }
+
 .child1 {
   tab-size: 30%;
   flex-shrink: 0;
@@ -13,12 +14,15 @@
   text-align: justify;
   overflow: auto;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: #eee;
 }
+
 ::-webkit-scrollbar-thumb {
   background: grey;
 }
@@ -29,6 +33,7 @@
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .card1 {
   max-width: 100%;
   margin-left: 5px;
@@ -36,24 +41,28 @@
   height: 100px;
   /* background:url(/assets/image/celebration-pattern.png); */
 }
+
 .card2 {
   max-width: 100%;
   margin-left: 10px;
   margin-top: 30px;
   height: 180px;
 }
+
 .card3 {
   max-width: 100%;
   margin-left: 10px;
   margin-top: 50px;
   height: 180px;
 }
+
 mat-toolbar {
   background: white;
   color: black;
   padding: 1px;
   width: 10px;
 }
+
 mat-sidenav {
   margin: 16px;
   width: 80px;
@@ -67,6 +76,7 @@ mat-sidenav {
 .header {
   font-size: 15px;
 }
+
 .content {
   /* height: calc(100vh - 98px); */
 
@@ -79,6 +89,7 @@ mat-sidenav {
   border-radius: 10px;
   overflow: hidden !important;
 }
+
 mat-sidenav-container {
   height: calc(100vh - 65px);
 }
@@ -92,6 +103,7 @@ mat-sidenav-container {
   margin-top: 25px;
   margin-left: 10px;
 }
+
 .avatar {
   margin-top: 16px;
   width: 100px;
@@ -109,6 +121,7 @@ mat-sidenav-container {
   font-size: 0.7rem;
   color: lightgray;
 }
+
 mat-divider {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -119,18 +132,22 @@ mat-divider {
   margin-bottom: 50%;
   margin-left: 80%;
 }
+
 .mtmail {
   margin-left: 850px;
   padding-top: 0;
   color: darkgray;
 }
+
 .menuline {
   padding-right: 30px;
 }
+
 .feed {
   margin-left: 50px;
   padding-top: 50px;
 }
+
 /*----------------------------------------------------------------------------------------*/
 
 .right {
@@ -143,9 +160,11 @@ mat-divider {
   background-size: contain;
   height: calc(100vh - 42px); */
 }
+
 .right::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
+
 .left {
   width: 60vw;
   background-color: rgb(244, 244, 244);
@@ -154,9 +173,11 @@ mat-divider {
   border: 5px solid transparent;
   text-align: justify;
 }
+
 .left::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
+
 /* .tab-card{
   overflow-x: hidden;
   overflow-y:scroll;
@@ -166,6 +187,7 @@ mat-divider {
   min-height: 100vh;
   display: flex;
 }
+
 .uppercase {
   color: #1b2436;
   opacity: 0.66;
@@ -180,6 +202,7 @@ mat-divider {
   font-size: 12px;
   text-transform: uppercase;
 }
+
 .shorcut {
   color: #cacfd5;
   font-size: 1.571em;
@@ -190,6 +213,7 @@ mat-divider {
   padding-bottom: 24px;
   padding-left: 30px;
 }
+
 .wishcard {
   padding: 16px 16px 16px 18px;
   padding-top: 16px;
@@ -197,19 +221,23 @@ mat-divider {
   padding-bottom: 16px;
   padding-left: 18px;
 }
+
 .user {
   width: 32px;
   position: relative;
   display: flex;
   cursor: pointer;
 }
+
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
+
 .avtar-cont {
   margin: auto;
 }
+
 avtar-content {
   text-align: center;
   border-radius: 100%;
@@ -228,6 +256,7 @@ avtar-content {
   line-height: 32px;
   font-family: Helvetica, Arial, sans-serif;
 }
+
 .user-details {
   width: calc(100% - 32px);
   padding: 0 0 0 13px;
@@ -236,6 +265,7 @@ avtar-content {
   padding-bottom: 0px;
   padding-left: 13px;
 }
+
 .inline-block {
   font-size: 0.657em;
   color: #007afc;
@@ -244,6 +274,7 @@ avtar-content {
   white-space: nowrap;
   font-weight: 500;
 }
+
 .dblock {
   font-size: 0.714em;
   color: #767676;
@@ -253,6 +284,7 @@ avtar-content {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .feedtext {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-top-width: 1px;
@@ -263,26 +295,31 @@ avtar-content {
   align-items: center !important;
   display: flex !important;
 }
+
 figure {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
 }
+
 .spin {
   line-height: 1.428em;
   font-weight: 400;
   color: rgba(27, 36, 54, 0.8);
   word-break: break-word;
 }
+
 .calender {
   background-color: white;
   width: 80%;
   margin-left: 60px;
 }
+
 .special-date {
   background-color: red;
 }
+
 .profilebar {
   font-size: 0.857em;
   color: #6f778b;
@@ -291,6 +328,7 @@ figure {
   white-space: nowrap;
   font-weight: 400;
 }
+
 .row {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -299,6 +337,7 @@ figure {
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .cold {
   padding: 0 !important;
   flex: 0 0 33.333333%;
@@ -308,6 +347,7 @@ figure {
   min-height: 1px;
   box-sizing: border-box;
 }
+
 .wishcard {
   margin-top: 0px;
   margin-right: 5px;
@@ -320,11 +360,13 @@ figure {
   align-items: flex-start !important;
   display: flex !important;
 }
+
 .useravt {
   width: 32px;
   position: relative;
   display: flex;
 }
+
 .bdaycap {
   top: -25px;
   right: auto;
@@ -335,10 +377,12 @@ figure {
   z-index: auto;
   width: 24px;
 }
+
 .userdet {
   width: calc(80% - 32px);
   padding-left: 13px;
 }
+
 .ddblock {
   font-size: 0.757em;
   color: #007afc;
@@ -362,10 +406,12 @@ figure {
   height: 35px;
   border-radius: 50%;
 }
-mat-calender::selection{
+
+mat-calender::selection {
   color: red;
 }
-.arrow-circle{
+
+.arrow-circle {
   top: calc(50% - 19px);
   right: -2px;
   bottom: 0;

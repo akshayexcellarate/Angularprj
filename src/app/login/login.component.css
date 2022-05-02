@@ -1,39 +1,42 @@
+mat-card {
 
-mat-card{
-
-  /* margin-left: auto; */
-  margin: auto;
+    /* margin-left: auto; */
+    margin: auto;
     text-align: center;
     max-height: 600px;
     max-width: 500px;
-    background-color:whitesmoke;
-    color:black;
+    background-color: whitesmoke;
+    color: black;
     border-radius: 20%;
     background-position: center;
-     
-    
+
+
 }
-.content-body{
+
+.content-body {
     min-height: 100%;
     padding: 195px 1rem;
     background-color: #16bca8;
     background: no-repeat url(https://images.unsplash.com/photo-1573495612937-f01934eeaaa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
     background-size: cover;
     background-position: center;
-    display:block;
+    display: block;
 }
 
-.full-width{
-        width: 80%;
+.full-width {
+    width: 80%;
 
 }
-.forget-password{
-        padding-left: 0px;
+
+.forget-password {
+    padding-left: 0px;
 }
-.email-input{
+
+.email-input {
     padding-top: 10px;
 }
-.aLink{
+
+.aLink {
     float: right;
     padding-right: 60px;
     text-decoration: none;

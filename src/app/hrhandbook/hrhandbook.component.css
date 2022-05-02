@@ -1,92 +1,96 @@
-#container{
+#container {
     min-height: 100vh;
-    display:flex;
-} 
+    display: flex;
+}
 
-mat-sidenav{
-        margin: 16px;
-        width: 80px;
-        border-right: none;
-        background: #1b2436;
-        color :white;
-        border-radius: 10px;
-        /* padding: 10px; */
-        text-align: center;
-    }   
-      
-mat-sidenav-container{
-height: calc(100vh - 65px);
-} 
-.content{
+mat-sidenav {
+    margin: 16px;
+    width: 80px;
+    border-right: none;
+    background: #1b2436;
+    color: white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+}
+
+.content {
     /* height: calc(100vh - 98px);
     margin: 16px;
     margin-left: 32px; */
-    display:flex;
+    display: flex;
     font-size: 1rem;
-    color:black;
+    color: black;
     border-radius: 10px;
- } 
- .menu-button{
+}
+
+.menu-button {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-size: 1rem;
-    margin-top: 25px; 
-  }    
+    margin-top: 25px;
+}
 
-  .contenthr {
-        padding: 37px 0 20px;
-        padding-top: 37px;
-        padding-right: 0px;
-        padding-bottom: 20px;
-        padding-left: 0px;
-        max-width: 640px;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: 100%;
-    }
- .sbox {
-        border: 1.5px solid #e5e5e5;
-        border-top-color: rgb(229, 229, 229);
-        border-top-style: solid;
-        border-top-width: 1.5px;
-        border-right-color: rgb(229, 229, 229);
-        border-right-style: solid;
-        border-right-width: 1.5px;
-        border-bottom-color: rgb(229, 229, 229);
-        border-bottom-style: solid;
-        border-bottom-width: 1.5px;
-        border-left-color: rgb(229, 229, 229);
-        border-left-style: solid;
-        border-left-width: 1.5px;
-        border-image-source: initial;
-        border-image-slice: initial;
-        border-image-width: initial;
-        border-image-outset: initial;
-        border-image-repeat: initial;
-        border-radius: 4px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px;
-        display: flex;
-        margin: 0;
-        width: calc(100% - 0px);
-        height: 40px;
- }  
-.form-field{
+.contenthr {
+    padding: 37px 0 20px;
+    padding-top: 37px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: 100%;
+}
+
+.sbox {
+    border: 1.5px solid #e5e5e5;
+    border-top-color: rgb(229, 229, 229);
+    border-top-style: solid;
+    border-top-width: 1.5px;
+    border-right-color: rgb(229, 229, 229);
+    border-right-style: solid;
+    border-right-width: 1.5px;
+    border-bottom-color: rgb(229, 229, 229);
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    border-left-color: rgb(229, 229, 229);
+    border-left-style: solid;
+    border-left-width: 1.5px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    margin: 0;
+    width: calc(100% - 0px);
+    height: 40px;
+}
+
+.form-field {
     display: inline-block;
     position: relative;
-     text-align: left;
+    text-align: left;
     font-size: inherit;
     font-weight: 400;
     letter-spacing: normal;
-    font-family: Montserrat,sans-serif!important;
-    color: #67757c!important;
-    line-height: normal!important;
-    width: 100%; 
+    font-family: Montserrat, sans-serif !important;
+    color: #67757c !important;
+    line-height: normal !important;
+    width: 100%;
 }

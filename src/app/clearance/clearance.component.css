@@ -1,52 +1,55 @@
-mat-sidenav-container{
+mat-sidenav-container {
 
     height: calc(100vh - 65px);
-    }
+}
 
-    mat-sidenav{
-        margin: 16px;
-        width: 80px;
-        border-right: none;
-        background: #1b2436;
-        color :white;
-        border-radius: 10px;
-        /* padding: 10px; */
-        text-align: center;
-      }    
- .menu-button{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 1rem;
-        margin-top: 25px;
-      
-       
-      }
-   #container{
-       min-height: 100vh;
-       display:flex;
-       background-color: white;
-   } 
-.container{
+mat-sidenav {
+    margin: 16px;
+    width: 80px;
+    border-right: none;
+    background: #1b2436;
+    color: white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-top: 25px;
+
+
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    background-color: white;
+}
+
+.container {
     display: grid;
-    height:85vh;
+    height: 85vh;
     grid-template-columns: auto auto;
-  }
+}
 
-  .content{
+.content {
     height: calc(100vh - 98px);
     margin: 16px;
     margin-left: 32px;
-    display:flex;    
+    display: flex;
     font-size: 1rem;
-    color:black;
+    color: black;
     border-radius: 10px;
- }
- 
+}
 
 
- .mat-icon{
+
+.mat-icon {
     background-repeat: no-repeat;
     display: inline-block;
     fill: currentColor;
@@ -54,8 +57,9 @@ mat-sidenav-container{
     width: 24px;
     position: absolute;
     right: 17px;
- }
- .tab-card{
+}
+
+.tab-card {
     padding: 16px 16px 16px 24px;
     padding-top: 16px;
     padding-right: 16px;
@@ -64,54 +68,61 @@ mat-sidenav-container{
 
     cursor: pointer;
     height: 105px;
- }
- p{
+}
+
+p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: #929caf;
- }
+}
 
- .header-content{
+.header-content {
     line-height: 40px;
     background: #eceff1;
-     /* padding: 7px 15px; */
+    /* padding: 7px 15px; */
     padding-top: 7px;
     /* padding-right: 15px; */
     padding-bottom: 7px;
     /* padding-left: 80px;  */
     width: 100%;
     height: 5%;
-  
+
 }
+
 .mat-tab-group {
     display: flex;
     flex-direction: column;
 }
+
 .mat-tab-label-container {
     display: flex;
     flex-grow: 1;
     overflow: hidden;
     z-index: 1;
 }
+
 .mat-tab-list {
     flex-grow: 1;
     position: relative;
     transition: transform 500ms cubic-bezier(0.35, 0, 0.25, 1);
 }
+
 .mat-tab-labels {
     display: flex;
 }
+
 .mat-tab-group {
     margin-bottom: 48px;
     /* margin-right:50%; */
     /* margin-top: 20%; */
-  }
-  .image1{
-      margin-left:25%;
-      margin-top: 55px;
+}
+
+.image1 {
+    margin-left: 25%;
+    margin-top: 55px;
     width: 30vw;
     /* background-color:white; */
     background-image: url(/assets/image/hiker_man_colour.png);
@@ -119,12 +130,12 @@ mat-sidenav-container{
     background-position: 0 0;
     background-size: contain;
     height: calc(70vh - 42px);
-  }
+}
 
- .clsinboxsmall{
+.clsinboxsmall {
     font-size: 16px;
-    color: rgba(40,44,63,.72);
+    color: rgba(40, 44, 63, .72);
     font-weight: 300;
     /* margin-top: 20%; */
 
- }
+}
