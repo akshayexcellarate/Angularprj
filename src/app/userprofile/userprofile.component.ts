@@ -4,6 +4,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { RegistrationService } from '../registration.service';
 import { UserDetails } from '../UserDetails';
 import { Location } from '@angular/common';
+import { QrcodeComponent } from '../qrcode/qrcode.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-userprofile',
@@ -20,9 +22,16 @@ export class UserprofileComponent implements OnInit {
   shortFirst!:any
   shortSecond!:any
   
-  constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute, private _location:Location) { }
+  constructor(private formBuilder:FormBuilder,private api:RegistrationService, private route:Router,private activate:ActivatedRoute, private _location:Location, public dialog:MatDialog) { }
   backClicked(){
     this._location.back();
+  }
+  openDialog() {
+    this.dialog.open(QrcodeComponent, {
+      data: {
+        animal: 'panda',
+      },
+    });
   }
   ngOnInit(): void {
 this.id=(this.activate.snapshot.paramMap.get('id'));
