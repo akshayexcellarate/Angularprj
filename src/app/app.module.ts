@@ -41,6 +41,7 @@ import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { QrcodeComponent } from './qrcode/qrcode.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -63,7 +64,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     LetterComponent,
     HrhandbookComponent,
     AttendenceComponent,
-    PayslipComponent
+    PayslipComponent,
+    QrcodeComponent
 
   ],
   imports: [
