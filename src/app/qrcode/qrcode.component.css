@@ -1,0 +1,30 @@
+.content{
+    padding: 0 1.5em 2em;
+    background-color: #4b546e;
+    overflow: hidden;
+    min-height: 136px;
+    position: relative;
+    /* background: #fff; */
+    color: #333;
+}
+.container{
+    text-align: center!important;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header{
+    color:#fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.header-subtitle{
+        color: #fff;
+    font-size: 12px;
+    padding-bottom: 12px;
+    font-weight: 400;
+}
+
