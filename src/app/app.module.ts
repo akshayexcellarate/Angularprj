@@ -42,6 +42,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -90,7 +91,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDialogModule
   ],
   providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
     MatNativeDateModule  ],
