@@ -49,15 +49,8 @@ export class DashboardComponent implements OnInit {
   this.selectedDate= event;
   
 }   
-  constructor(private route:Router,public api:RegistrationService ,public dialog:MatDialog) { }
+  constructor(private route:Router,public api:RegistrationService) { }
  
-  openDialog() {
-    this.dialog.open(QrcodeComponent, {
-      data: {
-        animal: 'panda',
-      },
-    });
-  }
  
   ngOnInit(): void {
    this.id=this.api.getData()
