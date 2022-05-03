@@ -429,3 +429,8 @@ mat-calender::selection {
   cursor: pointer;
   background-image: url(/assets/image/right-arrow-forward.svg);
 }
+::ng-deep.my-tooltip{
+
+background-color:#007afc;
+
+}
