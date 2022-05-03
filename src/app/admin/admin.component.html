@@ -1,1 +1,103 @@
-<p>admin works!</p>
+<div style="margin-left: 20%;">
+    <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Prefix</mat-label>
+        <mat-select>
+          <mat-option value="Mr">Mr</mat-option>
+          <mat-option value="Mr">Miss</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*First Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Middle Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Last Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Employee Code</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*DOB</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Work mail</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Mobile Number</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Skills</mat-label>
+        <input matInput>
+      </mat-form-field>
+     <br>
+     <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Doj</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Employment Type</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Employment status</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Date of confirmation</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Company</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Business Unit</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Department</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Designation</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Region</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Branch</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Reporting Manager</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="formgap" appearance="legacy">
+        <mat-label>*Functional Manager</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+<button class="formgap" mat-button>
+ Submit
+</button>      
+</div>
