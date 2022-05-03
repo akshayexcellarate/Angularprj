@@ -13,6 +13,7 @@ import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
 import { PayslipComponent } from './payslip/payslip.component';
 import { AttendenceComponent } from './attendence/attendence.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {
@@ -70,6 +71,10 @@ const routes: Routes = [
       {
         path:'qrcode',
         component:QrcodeComponent
+      },
+      {
+        path:'admin',
+        component:AdminComponent
       }
     ],
   },
