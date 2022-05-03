@@ -43,6 +43,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { AdminComponent } from './admin/admin.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -66,7 +67,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     HrhandbookComponent,
     AttendenceComponent,
     PayslipComponent,
-    QrcodeComponent
+    QrcodeComponent,
+    AdminComponent
 
   ],
   imports: [
