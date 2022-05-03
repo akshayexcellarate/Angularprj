@@ -39,18 +39,21 @@
               required
               [(ngModel)]="user.password"
               pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              [type]="hide ? 'password':'text'"
+              [type]="hide ? 'password' : 'text'"
             />
-          <i class="material-icons" matSuffix (click)="hide=!hide" style="cursor: pointer;">
-            {{hide ? 'visibility':'visibility_off'}}
-          </i>
+            <i
+              class="material-icons"
+              matSuffix
+              (click)="hide = !hide"
+              style="cursor: pointer"
+            >
+              {{ hide ? "visibility" : "visibility_off" }}
+            </i>
           </mat-form-field>
-          <h5><a href=""> click here if you are admin</a></h5>
+          <h5><a routerLink="admin"> click here if you are admin</a></h5>
         </div>
         <button mat-flat-button color="primary">Login</button>
-       
       </form>
-    
     </mat-card-content>
   </mat-card>
 </div>
