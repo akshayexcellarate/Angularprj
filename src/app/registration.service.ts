@@ -45,4 +45,7 @@ export class RegistrationService {
   public fetchBdayUser():Observable<any>{
     return this.http.get<any>(`http://localhost:8080/getuserdetailsbydate`);
   }
+  public addUserDetails(userde: UserDetails):Observable<any>{
+    return this.http.post<any>(`http://localhost:8080/adduserdetails`,userde);
+  }
 }
