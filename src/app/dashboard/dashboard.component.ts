@@ -49,6 +49,7 @@ export class DashboardComponent implements OnInit {
   this.selectedDate= event;
   
 }   
+
   constructor(private route:Router,public api:RegistrationService) { }
  
  

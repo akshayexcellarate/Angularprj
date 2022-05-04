@@ -44,6 +44,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AdminComponent } from './admin/admin.component';
+import{ FormsModule} from '@angular/forms'
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -94,7 +95,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatDatepickerModule,
     MatNativeDateModule,
     MatProgressBarModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
     MatNativeDateModule  ],
