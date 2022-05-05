@@ -68,7 +68,7 @@ export class DashboardComponent implements OnInit {
   )
    this.api.fetchBdayUser().subscribe(
      bday=>{
-       console.log("bday response received");
+       console.log(bday);
         this.bdayName1=bday[0].firtsName;
         this.bdayLastName1=bday[0].lastName;
         this.bdayBranch1=bday[0].branch;
