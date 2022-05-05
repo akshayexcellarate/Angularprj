@@ -44,16 +44,16 @@ export class AdminformComponent implements OnInit {
   formatedDate:any
   formSubmit(){
    console.log(this.userdetails)
-  //  this.api.addUserDetails(this.userdetails).subscribe(
-  //    data=>{
-  //     console.log(data);
-  //    },
-  //    (error)=>{
-  //    console.log(error);
-  //    alert("some error is occured")
-  //    }
+   this.api.addUserDetails(this.userdetails).subscribe(
+     data=>{
+      console.log(data);
+     },
+     (error)=>{
+     console.log(error);
+     alert("some error is occured")
+     }
      
-  //  );
+   );
   }
 
 }

@@ -6,7 +6,7 @@
           </h5>
         </b>
       </div>
-    <form (ngSubmit)="formSubmit()" style="margin-top: 30px;">
+    <form (ngSubmit)="formSubmit()" #myform="ngForm" style="margin-top: 30px;">
         <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*Prefix</mat-label>
           <mat-select [(ngModel)]="userdetails.prefix" name="prefix" class="formfont">
@@ -76,7 +76,7 @@
         </mat-form-field>  -->
          <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*emp type</mat-label>
-          <mat-select [(ngModel)]="userdetails.prefix" class="formfont" name="emptype">
+          <mat-select [(ngModel)]="userdetails.emptype" class="formfont" name="emptype">
             <mat-option value="permanent">Permanent</mat-option>
             <mat-option value="Trainee">Trainee</mat-option>
           </mat-select>
@@ -164,8 +164,11 @@
             <input [(ngModel)]="userdetails.dateofconf" class="formfont" name="dateofconf" matInput />
           </mat-form-field> 
           <br>
-        <button type="submit" class="formgap" mat-button style="background-color: #0ae8f8; margin-left: 350px;width:7em;margin-top:2px;">Submit</button>
-      </form>
+       <div style="margin-left: 260px;">
+        <button type="submit" class="formgap" mat-button style="background-color: #1b2436;width:7em;margin-top:2px;color: white; ">Submit</button>
+        <button type="reset" class="formgap" mat-button  style="background-color: #1b2436; width:7em;margin-top:2px;color: white;">Clear</button>
+       </div>
+    </form>
       
       
     
