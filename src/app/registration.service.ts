@@ -48,4 +48,7 @@ export class RegistrationService {
   public addUserDetails(userde: UserDetails):Observable<any>{
     return this.http.post<any>(`http://localhost:8080/adduserdetails`,userde);
   }
+  public getUserDetails():Observable<any>{
+    return this.http.get<any>(`http://localhost:8080/getuserdetails`);
+  }
 }
