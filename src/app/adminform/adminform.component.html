@@ -1,0 +1,172 @@
+<div style="margin-left: 50px;">
+    <div class="header-content">
+        <b>
+          <h5 style="font-size: 15px; font-weight: 550; margin-left: 400px">
+            Add Employee Details
+          </h5>
+        </b>
+      </div>
+    <form (ngSubmit)="formSubmit()" style="margin-top: 30px;">
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Prefix</mat-label>
+          <mat-select [(ngModel)]="userdetails.prefix" name="prefix" class="formfont">
+            <mat-option value="Mr">Mr</mat-option>
+            <mat-option value="Miss">Miss</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*First Name</mat-label>
+          <input [(ngModel)]="userdetails.firtsName" class="formfont" name="firstname" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Middle Name</mat-label>
+          <input [(ngModel)]="userdetails.middleName" class="formfont" name="middlename" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Last Name</mat-label>
+          <input [(ngModel)]="userdetails.lastName" class="formfont" name="lastname" matInput />
+        </mat-form-field>
+        <br />
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*employee code</mat-label>
+          <input [(ngModel)]="userdetails.code" class="formfont" name="code" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Id</mat-label>
+          <input [(ngModel)]="userdetails.id" class="formfont" name="id" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*dob</mat-label>
+          <input [(ngModel)]="userdetails.dob" class="formfont" name="dob" matInput />
+        </mat-form-field> 
+         <!-- <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*dob</mat-label>
+          <input 
+          [(ngModel)]="userdetails.dob"
+          name="dob"
+          matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>  -->
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Mail</mat-label>
+          <input [(ngModel)]="userdetails.mail" class="formfont" name="mail" matInput />
+        </mat-form-field>
+        <br />
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*skill</mat-label>
+          <input [(ngModel)]="userdetails.skill" class="formfont" name="skill" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Doj</mat-label>
+          <input [(ngModel)]="userdetails.doj" class="formfont" name="doj" matInput />
+        </mat-form-field> 
+         <!-- <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*date of join</mat-label>
+          <input 
+          [(ngModel)]="userdetails.doj"
+          name="doj"
+          matInput [matDatepicker]="picker1">
+          <mat-datepicker-toggle matSuffix [for]="picker1">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>  -->
+         <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*emp type</mat-label>
+          <mat-select [(ngModel)]="userdetails.prefix" class="formfont" name="emptype">
+            <mat-option value="permanent">Permanent</mat-option>
+            <mat-option value="Trainee">Trainee</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*emp status</mat-label>
+          <mat-select [(ngModel)]="userdetails.empstatus" class="formfont" name="empstatus">
+            <mat-option value="confirmed">confirmed</mat-option>
+            <mat-option value="probation">probation</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br />
+         <!-- <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*dob</mat-label>
+          <input 
+          [(ngModel)]="userdetails.dateofconf"
+          name="dateconf"
+          matInput [matDatepicker]="picker3">
+          <mat-datepicker-toggle matSuffix [for]="picker3">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker3></mat-datepicker>
+        </mat-form-field>  -->
+        <br />
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Company</mat-label>
+          <input [(ngModel)]="userdetails.company" class="formfont" name="company" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Business Unit</mat-label>
+          <mat-select [(ngModel)]="userdetails.bu" class="formfont" name="bu">
+            <mat-option value="BU 1 Anil Nerurkar:ADI">BU 1 Anil Nerurkar</mat-option>
+            <mat-option value="BU 3 Nikhil Walvekar:ADI"
+              >BU 3 Nikhil Walvekar</mat-option
+            >
+            <mat-option value="BU 4 Preshit Gadkari:ADI"
+              >BU 4 Preshit Gadkari</mat-option
+            >
+            <mat-option value="BU 6 Rajesh Sharma:ADI">BU 6 Rajesh Sharma</mat-option>
+            <mat-option value="BU 7 Mukund Rajamannar:ADI"
+              >BU 7 Mukund Rajamannar</mat-option
+            >
+            <mat-option value="BU 8 Nidhi Shrikhande:ADI"
+              >BU 8 Nidhi Shrikhande</mat-option
+            >
+            <mat-option value="BU 9 Yogesh Patel:ADI">BU 9 Yogesh Patel</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Department</mat-label>
+          <input [(ngModel)]="userdetails.dept" class="formfont" name="dept" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Designation</mat-label>
+          <input [(ngModel)]="userdetails.desig" class="formfont" name="desig" matInput />
+        </mat-form-field>
+        <br />
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Region</mat-label>
+          <input [(ngModel)]="userdetails.region" class="formfont" name="region" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Branch</mat-label>
+          <input [(ngModel)]="userdetails.branch" class="formfont" name="branch" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Report manager</mat-label>
+          <input
+            [(ngModel)]="userdetails.reportmanager"
+            class="formfont"
+            name="reportmanager"
+            matInput
+          />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Functional Manager</mat-label>
+          <input [(ngModel)]="userdetails.funmanager" class="formfont" name="funmanager" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Image</mat-label>
+          <input [(ngModel)]="userdetails.image" class="formfont" name="image" matInput />
+        </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+            <mat-label>*Date of conf</mat-label>
+            <input [(ngModel)]="userdetails.dateofconf" class="formfont" name="dateofconf" matInput />
+          </mat-form-field> 
+          <br>
+        <button type="submit" class="formgap" mat-button style="background-color: #0ae8f8; margin-left: 350px;width:7em;margin-top:2px;">Submit</button>
+      </form>
+      
+      
+    
+</div>

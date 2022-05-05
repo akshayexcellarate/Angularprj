@@ -14,6 +14,8 @@ import { PayslipComponent } from './payslip/payslip.component';
 import { AttendenceComponent } from './attendence/attendence.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { AdminComponent } from './admin/admin.component';
+import { AdminformComponent } from './adminform/adminform.component';
+import { ShowemployeeComponent } from './showemployee/showemployee.component';
 
 const routes: Routes = [
   {
@@ -74,7 +76,17 @@ const routes: Routes = [
       },
       {
         path:'admin',
-        component:AdminComponent
+        component:AdminComponent,
+        children:[
+          {
+            path:'form',
+            component:AdminformComponent
+          },
+          {
+            path:'view',
+            component:ShowemployeeComponent
+          }
+        ]
       }
     ],
   },

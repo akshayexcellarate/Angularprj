@@ -1,16 +1,14 @@
-import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder,Validators,FormControl } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 import { RegistrationService } from '../registration.service';
-import { UserDetails } from '../UserDetails';
+
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  selector: 'app-adminform',
+  templateUrl: './adminform.component.html',
+  styleUrls: ['./adminform.component.css']
 })
-export class AdminComponent implements OnInit {
-  us=new UserDetails();
- 
+export class AdminformComponent implements OnInit {
+
   constructor( private formbulder:FormBuilder,public api:RegistrationService) { }
    
   public userdetails:any={
@@ -40,12 +38,6 @@ export class AdminComponent implements OnInit {
   };
   ngOnInit(): void {
   }
-  logOut(): void{
-    this.api.global=false
-    console.log(this.api.global);
-  // this.route.navigate([""])
-  // console.log("main pge");
-}
   onSubmit(data:any){
    console.log(data.value)
   }
@@ -63,5 +55,5 @@ export class AdminComponent implements OnInit {
      
   //  );
   }
-  
+
 }
