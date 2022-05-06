@@ -48,6 +48,7 @@ import{ FormsModule} from '@angular/forms';
 import { AdminformComponent } from './adminform/adminform.component';
 import { ShowemployeeComponent } from './showemployee/showemployee.component'
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -74,7 +75,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     QrcodeComponent,
     AdminComponent,
     AdminformComponent,
-    ShowemployeeComponent
+    ShowemployeeComponent,
+    AdminloginComponent
 
   ],
   imports: [
