@@ -1,81 +1,78 @@
 mat-card {
-
-    /* margin-left: auto; */
-    margin: auto;
-    text-align: center;
-    max-height: 600px;
-    max-width: 500px;
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 20%;
-    background-position: center;
-
-
+  /* margin-left: auto; */
+  margin: auto;
+  text-align: center;
+  max-height: 600px;
+  max-width: 500px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 20%;
+  background-position: center;
 }
 
 .content-body {
-    min-height: 100%;
-    padding: 195px 1rem;
-    background-color: #16bca8;
-    background: no-repeat url(https://images.unsplash.com/photo-1573495612937-f01934eeaaa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
-    background-size: cover;
-    background-position: center;
-    display: block;
+  min-height: 100%;
+  padding: 195px 1rem;
+  background-color: #16bca8;
+  background: no-repeat
+    url(https://images.unsplash.com/photo-1573495612937-f01934eeaaa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+  background-size: cover;
+  background-position: center;
+  display: block;
 }
 
 .full-width {
-    width: 80%;
-
+  width: 80%;
 }
 
 .forget-password {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 .email-input {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .aLink {
-    float: right;
-    padding-right: 60px;
-    text-decoration: none;
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
 }
 
 .right {
-    width: 45vw;
-    /* background-color: rgb(235, 235, 235); */
-    height: 100vh;
-  }
-  .left {
-    width: 60vw;
-     background-image: url("/assets/image/Loginpreview.png");
-     background-size: cover;
-     background-repeat: no-repeat;
-     flex: 0 0 50%;
-     max-width: 50%;
-  }
-  .content {
-    /* height: calc(100vh - 98px); */
-  
-  
-    /* min-height: 100vh; */
-    display: flex;
-    font-size: 1rem;
-    color: black;
-  
-    overflow: hidden !important;
-  }
-  .adminlog{
-      margin-top: 200px;
-      width: 500px;
-      margin-left: 80px;
-      height: 50vh;
-  }
-  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-    color:#00bfa5;
+  width: 45vw;
+  /* background-color: rgb(235, 235, 235); */
+  height: 100vh;
+}
+.left {
+  width: 60vw;
+  background-image: url("/assets/image/Loginpreview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.content {
+  /* height: calc(100vh - 98px); */
+
+  /* min-height: 100vh; */
+  display: flex;
+  font-size: 1rem;
+  color: black;
+
+  overflow: hidden !important;
+}
+.adminlog {
+  margin-top: 200px;
+  width: 500px;
+  margin-left: 80px;
+  height: 50vh;
+}
+::ng-deep
+  .mat-form-field-appearance-outline.mat-focused
+  .mat-form-field-outline-thick {
+  color: #00bfa5;
 }
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-    color:#00bfa5;
+  color: #00bfa5;
 }
-  
