@@ -11,7 +11,7 @@ import { RegistrationService } from '../registration.service';
 })
 
 export class ShowemployeeComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'prefix','firtsName','middleName', 'lastName', 'code','empstatus'];
+  displayedColumns: string[] = ['id', 'prefix','firtsName','middleName', 'lastName', 'code','empstatus','action'];
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -42,6 +42,11 @@ export class ShowemployeeComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-  
+editProduct(){
+
+} 
+deleteProduct(){
+
+} 
 
 }
