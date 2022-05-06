@@ -1,4 +1,4 @@
-<div class="content-body">
+<!-- <div class="content-body">
   <mat-card style="background-image: url(/assets/image/login2.png)">
     <mat-card-content>
       <div class>
@@ -21,13 +21,11 @@
               required
               [(ngModel)]="user.emailId"
             />
-            <!-- <mat-error *ngIf="loginForm.get('email')>
-                        Required email address
-                        </mat-error> -->
+           
           </mat-form-field>
         </div>
         <div>
-          <!-- <span class="aLink">Forget Password?</span> -->
+          
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>Password</mat-label>
             <input
@@ -50,10 +48,67 @@
               {{ hide ? "visibility" : "visibility_off" }}
             </i>
           </mat-form-field>
-          <h5><a routerLink="admin/form"> click here if you are admin</a></h5>
+          <h5><a routerLink="adminlogin"> click here if you are admin</a></h5>
         </div>
         <button mat-flat-button color="primary">Login</button>
       </form>
     </mat-card-content>
   </mat-card>
+</div> -->
+<!---------------------------------------------------------------------->
+<div class="content">
+  <div class="left">
+  <div style="margin-top: 50px; margin-left:40px;">
+   <h2 style="font-weight: 430; font-size: 1.514em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">HROne</h2>
+  <p style="font-size: 1.285em; font-weight: 400; margin-bottom: 24px;font-family: 'Courier New', Courier, monospace;">Enabling happier workplaces</p>
+  </div>
+  </div>
+  <div class="right">
+  <div class="adminlog mat-elevation-z4">
+  <div style="margin-top: 10px;">
+      <h1 style="font-weight: 250; font-size: 1.714em; margin-left: 30px; font-family:'Courier New', Courier, monospace;">welcome !</h1>
+      <h1 style="font-weight: 200; margin-left: 30px; font-family: 'Courier New', Courier, monospace;">Sign in to continue</h1>
+     <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+      <mat-error style="margin-left: 85px;">
+        <h5>{{ this.msg }}</h5>
+      </mat-error>
+      <mat-form-field appearance="outline" style="margin-left: 90px; width: 300px; font-size: 12px;" >
+        <mat-label>Username</mat-label>
+        <input 
+        formControlName="email"
+        name="email"
+        matInput
+        required
+        [(ngModel)]="user.emailId"
+        matInput>
+      </mat-form-field>
+      <mat-form-field appearance="outline" style="margin-left: 90px; width: 300px; font-size: 12px;" >
+        <mat-label>Password</mat-label>
+        <input 
+        formControlName="password"
+            input
+            type="password"
+            name="password"
+            matInput
+            required
+            [(ngModel)]="user.password"
+            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            [type]="hide ? 'password' : 'text'"
+        >
+        <i
+        class="material-icons"
+        matSuffix
+        (click)="hide = !hide"
+        style="cursor: pointer; color: #00bfa5;"
+      >
+        {{ hide ? "visibility" : "visibility_off" }}
+      </i>
+      </mat-form-field>
+      <h5 ><a routerLink="adminlogin" style="text-decoration: none; font-family: 'Courier New', Courier, monospace; color: #00bfa5; margin-left:150px;"> click here if you are admin</a></h5>
+<button mat-raised-button style="background-color: #00bfa5;color: white; margin-left: 200px; font-family: 'Courier New', Courier, monospace;">Sign In</button>
+     </form>
+      
 </div>
+  </div>
+  </div>
+  </div>

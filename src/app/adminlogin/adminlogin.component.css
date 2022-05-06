@@ -1,0 +1,37 @@
+.right {
+    width: 45vw;
+    /* background-color: rgb(235, 235, 235); */
+    height: 100vh;
+  }
+  .left {
+    width: 60vw;
+     background-image: url("/assets/image/Loginpreview.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     flex: 0 0 50%;
+     max-width: 50%;
+  }
+  .content {
+    /* height: calc(100vh - 98px); */
+  
+  
+    /* min-height: 100vh; */
+    display: flex;
+    font-size: 1rem;
+    color: black;
+  
+    overflow: hidden !important;
+  }
+  .adminlog{
+      margin-top: 200px;
+      width: 500px;
+      margin-left: 80px;
+      height: 50vh;
+  }
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color:#00bfa5;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color:#00bfa5;
+}
+  

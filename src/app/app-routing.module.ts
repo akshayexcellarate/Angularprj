@@ -16,6 +16,7 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminformComponent } from './adminform/adminform.component';
 import { ShowemployeeComponent } from './showemployee/showemployee.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 const routes: Routes = [
   {
@@ -87,6 +88,10 @@ const routes: Routes = [
             component:ShowemployeeComponent
           }
         ]
+      },
+      {
+        path:'adminlogin',
+        component:AdminloginComponent
       }
     ],
   },
