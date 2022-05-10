@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { User } from './user';
 import { UserDetails } from './UserDetails';
 import { LoginComponent } from './login/login.component';
+import { Admin } from './admin';
 @Injectable({
   providedIn: 'root',
 })
@@ -50,5 +51,8 @@ export class RegistrationService {
   }
   public getUserDetails():Observable<any>{
     return this.http.get<any>(`http://localhost:8080/getuserdetails`);
+  }
+  public fetchLogById(admin:Admin):Observable<any>{
+    return this.http.post<any>('http://localhost:8888/admin', admin);
   }
 }
