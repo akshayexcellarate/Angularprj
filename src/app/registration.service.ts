@@ -55,4 +55,7 @@ export class RegistrationService {
   public fetchLogById(admin:Admin):Observable<any>{
     return this.http.post<any>('http://localhost:8888/admin', admin);
   }
+  public fetchAdminById(id:any):Observable<any>{
+    return this.http.get<any>(`http://localhost:8888/admin/${id}`);
+  }
 }
