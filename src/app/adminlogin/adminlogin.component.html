@@ -70,11 +70,24 @@
           <mat-label>Password</mat-label>
           <input
           formControlName="password"
+          input
+          type="password"
           name="password"
           matInput
           required
           [(ngModel)]="admin.password"
+          pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          [type]="hide ? 'password' : 'text'"
+          
           matInput />
+          <i
+          class="material-icons"
+          matSuffix
+          (click)="hide = !hide"
+          style="cursor: pointer; color: #00bfa5"
+        >
+          {{ hide ? "visibility" : "visibility_off" }}
+        </i>
         </mat-form-field>
       <!-- </div> -->
       <button

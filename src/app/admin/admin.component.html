@@ -18,7 +18,7 @@
       <h6 class="header">Admin</h6>
     </div>
     <div class="mtmail">
-      <p class="header">nilesh555</p>
+      <p class="header">{{adminn.userName}}</p>
       <!-- <button mat-button>
       <mat-icon  matBadgeColor="warn" matBadgeSize="small" >notifications</mat-icon>
     </button>  -->
@@ -27,9 +27,13 @@
 </div>
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
-    <img class="avatar mat-elevation-z8" src="/assets/image/nilesh.jpeg" />
-    <h4 class="name">Nilesh Kadale</h4>
-    <p class="designation">Senior Hr Executive</p>
+    <!-- <img class="avatar mat-elevation-z8" src="/assets/image/nilesh.jpeg" /> -->
+    <img *ngIf="adminn.image"
+      class="avatar mat-elevation-z8"
+      src="data:image/jpeg;base64,{{ adminn.image }}"
+    /> 
+    <h4 class="name">{{adminn.name}}</h4>
+    <p class="designation">{{adminn.desig}}</p>
 
     <mat-divider></mat-divider>
 

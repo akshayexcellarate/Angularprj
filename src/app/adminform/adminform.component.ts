@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+// import { error } from 'console';
 import { RegistrationService } from '../registration.service';
 
 @Component({
@@ -8,9 +9,9 @@ import { RegistrationService } from '../registration.service';
   styleUrls: ['./adminform.component.css']
 })
 export class AdminformComponent implements OnInit {
-
+public id=1;
   constructor( private formbulder:FormBuilder,public api:RegistrationService) { }
-   
+
   public userdetails:any={
     id:'',
     mob:'',
@@ -37,6 +38,7 @@ export class AdminformComponent implements OnInit {
     image:''
   };
   ngOnInit(): void {
+
   }
   onSubmit(data:any){
    console.log(data.value)

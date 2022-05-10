@@ -1,6 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder,Validators,FormControl } from '@angular/forms';
+import { Admin } from '../admin';
 import { RegistrationService } from '../registration.service';
 import { UserDetails } from '../UserDetails';
 @Component({
@@ -10,7 +11,9 @@ import { UserDetails } from '../UserDetails';
 })
 export class AdminComponent implements OnInit {
   us=new UserDetails();
- 
+ public id: any;
+ admin!:any[];
+ adminn=new Admin()
   constructor( private formbulder:FormBuilder,public api:RegistrationService) { }
    
   public userdetails:any={
@@ -39,6 +42,17 @@ export class AdminComponent implements OnInit {
     image:''
   };
   ngOnInit(): void {
+  
+    
+    this.api.fetchAdminById(this.api.getData()).subscribe(
+      data=>{
+        this.adminn=data;
+        console.log(this.adminn)
+      },
+      error=>{
+        console.log("error");
+      }
+    )
   }
   logOut(): void{
     this.api.global=false
