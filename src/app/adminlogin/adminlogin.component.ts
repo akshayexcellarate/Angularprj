@@ -12,6 +12,7 @@ export class AdminloginComponent implements OnInit {
   loginForm!: FormGroup;
   public logId!:any;
   msg='';
+  hide=true;
   admin =new Admin();
   constructor(public service:RegistrationService,public _route:Router) { }
 
@@ -38,12 +39,9 @@ export class AdminloginComponent implements OnInit {
     error=>{
       console.log(this.service.global);
       console.log("exception occured")
-      this.msg="*Bad credentials, please enter valid email id and password";
-      
+      this.msg="*Bad credentials, please enter valid email id and password"; 
   }
     )
-
-
   }
 
 }
