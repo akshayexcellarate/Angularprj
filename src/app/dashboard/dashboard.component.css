@@ -169,6 +169,7 @@ mat-divider {
   width: 60vw;
   background-color: rgb(244, 244, 244);
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
   border: 5px solid transparent;
   text-align: justify;
