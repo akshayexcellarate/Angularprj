@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { NgToastService } from 'ng-angular-popup';
 // import { error } from 'console';
 import { RegistrationService } from '../registration.service';
 
@@ -10,7 +11,7 @@ import { RegistrationService } from '../registration.service';
 })
 export class AdminformComponent implements OnInit {
 public id=1;
-  constructor( private formbulder:FormBuilder,public api:RegistrationService) { }
+  constructor( private formbulder:FormBuilder,public api:RegistrationService,private toast:NgToastService) { }
 
   public userdetails:any={
     id:'',
@@ -48,7 +49,7 @@ public id=1;
    console.log(this.userdetails)
    this.api.addUserDetails(this.userdetails).subscribe(
      data=>{
-      console.log(data);
+      this.toast.success({detail:"Success Message",summary:"Record Added",duration:5000})
      },
      (error)=>{
      console.log(error);
