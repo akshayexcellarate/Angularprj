@@ -32,6 +32,12 @@ export class RegistrationService {
   public loginUserFromRemote(user: User): Observable<any> {
     return this.http.post<any>('http://localhost:8008/login', user);
   }
+  loginUser(token: string)
+{
+  localStorage.setItem("token",token)
+  console.log(token);
+  return true;
+}
   // public fetchLoginId(ser:User):Observable<any>{
   //   return this.http.get<any>("http://localhost:8008/login/"+'akshay@gmail.com');
   // }
