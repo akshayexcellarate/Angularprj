@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import {FormGroup,FormControl,Validators} from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginService } from '../login.service';
 import { RegistrationService } from '../registration.service';
 import { User } from '../user';
 @Component({
@@ -24,9 +25,21 @@ public logId!:any;
     }
     );
   }
+
+  // onLogin(){
+  //   this.loginService.doLogin().subscribe(
+  //     response=>{
+  //        console.log("recieved");
+  //     },
+  //     error=>{
+  //        console.log("error");
+  //     }
+  //   )
+  // }
   onLogin(){
     this.service.loginUserFromRemote(this.user).subscribe(
       data=>{
+        console.log(this.service.loginUser)
         console.log("response recived")
         this.service.global=true;
       //  console.log(data.id);
