@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
 import { RegistrationService } from '../registration.service';
 import { User } from '../user';
+import {NgToastModule, NgToastService} from 'ng-angular-popup';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,7 +17,7 @@ user =new User();
 msg='';
 myimage:string="assets/image/login.jpg";
 public logId!:any;
-  constructor(public service:RegistrationService,public _route:Router) { }
+  constructor(public service:RegistrationService,public _route:Router,private toast:NgToastService) { }
 
   ngOnInit(): void {
     this.loginForm=new FormGroup({
@@ -51,9 +52,13 @@ public logId!:any;
     this._route.navigate(['/dashboard'])
     } ,
     error=>{
+      if(this.user.emailId==null||this.user.password===null){
+        this.toast.warning({detail:"Warning Message",summary:"Fields are empty",duration:5000})
+      }else{
+        this.toast.error({detail:"Error Message",summary:"please enter valid email id and password",duration:5000})
+      }
       console.log(this.service.global);
       console.log("exception occured")
-      this.msg="*Bad credentials, please enter valid email id and password";
       
   }
     )
