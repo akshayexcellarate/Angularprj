@@ -49,6 +49,7 @@ import { AdminformComponent } from './adminform/adminform.component';
 import { ShowemployeeComponent } from './showemployee/showemployee.component'
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { NgToastModule } from 'ng-angular-popup';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -104,7 +105,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatProgressBarModule,
     MatDialogModule,
     FormsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    NgToastModule
   ],
   providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
     MatNativeDateModule  ],
