@@ -5,6 +5,8 @@ import { LoginService } from '../login.service';
 import { RegistrationService } from '../registration.service';
 import { User } from '../user';
 import {NgToastModule, NgToastService} from 'ng-angular-popup';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,7 +19,11 @@ user =new User();
 msg='';
 myimage:string="assets/image/login.jpg";
 public logId!:any;
-  constructor(public service:RegistrationService,public _route:Router,private toast:NgToastService) { }
+  constructor(public service:RegistrationService,public _route:Router,private toast:NgToastService,public translateService:TranslateService) { 
+    this.translateService.addLangs(['en','hi','mr']);
+    this.translateService.setDefaultLang('hi');
+    this.translateService.use('en');
+  }
 
   ngOnInit(): void {
     this.loginForm=new FormGroup({
@@ -53,7 +59,8 @@ public logId!:any;
     } ,
     error=>{
       if(this.user.emailId==null||this.user.password===null){
-        this.toast.warning({detail:"Warning Message",summary:"Fields are empty",duration:5000})
+        // this.toast.warning({detail:"Warning Message",summary:"Fields are empty",duration:5000})
+        // this.toast.warning({detail:this.translateService.instant('WARNINGMSG'),summary:"Fields are empty",duration:5000})
       }else{
         this.toast.error({detail:"Error Message",summary:"please enter valid email id and password",duration:5000})
       }
