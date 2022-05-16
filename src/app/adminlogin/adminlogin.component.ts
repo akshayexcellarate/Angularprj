@@ -3,6 +3,7 @@ import {FormGroup,FormControl,Validators} from '@angular/forms';
 import { Admin } from '../admin';
 import { Router } from '@angular/router';
 import { RegistrationService } from '../registration.service';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-adminlogin',
   templateUrl: './adminlogin.component.html',
@@ -14,7 +15,11 @@ export class AdminloginComponent implements OnInit {
   msg='';
   hide=true;
   admin =new Admin();
-  constructor(public service:RegistrationService,public _route:Router) { }
+  constructor(public service:RegistrationService,public _route:Router,public translateService:TranslateService) {
+    this.translateService.addLangs(['en','hi','mr']);
+    this.translateService.setDefaultLang('hi');
+    this.translateService.use('en');
+   }
 
   ngOnInit(): void {
     this.loginForm=new FormGroup({
