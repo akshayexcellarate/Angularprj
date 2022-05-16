@@ -11,7 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from'@angular/material/input';
 import{MatIconModule} from '@angular/material/icon';
 import {ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -50,7 +50,12 @@ import { ShowemployeeComponent } from './showemployee/showemployee.component'
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgToastModule } from 'ng-angular-popup';
+import { TranslateModule,TranslateLoader } from '@ngx-translate/core';
+import{TranslateHttpLoader} from '@ngx-translate/http-loader';
 
+export function rootLoaderFactory(http:HttpClient){
+  return new TranslateHttpLoader(http,'./assets/i18n/', '.json');
+}
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin
@@ -106,7 +111,15 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatDialogModule,
     FormsModule,
     MatPaginatorModule,
-    NgToastModule
+    NgToastModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide:TranslateLoader,
+        useFactory:rootLoaderFactory,
+        deps:[HttpClient]
+      },
+      defaultLanguage: 'hi'
+    }),
   ],
   providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
     MatNativeDateModule  ],
