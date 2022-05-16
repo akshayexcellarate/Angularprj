@@ -6,6 +6,7 @@ import { User } from './user';
 import { UserDetails } from './UserDetails';
 import { LoginComponent } from './login/login.component';
 import { Admin } from './admin';
+import { TranslateService } from '@ngx-translate/core';
 @Injectable({
   providedIn: 'root',
 })
@@ -15,7 +16,10 @@ export class RegistrationService {
   user!: UserDetails;
   id!: any;
   Holi!: any;
-  constructor(private http: HttpClient, private route: Router) {}
+  constructor(private http: HttpClient, private route: Router) {
+
+  }
+
   setData(idd: any) {
     this.id = idd;
   }
