@@ -68,4 +68,10 @@ export class RegistrationService {
   public fetchAdminById(id:any):Observable<any>{
     return this.http.get<any>(`http://localhost:8888/admin/${id}`);
   }
+  public deleteByUserId(id:any):Observable<any>{
+    return this.http.get<any>(`http://localhost:8080/deleteuserbyid/${id}`);
+  }
+  public updateUser(userde: UserDetails):Observable<any>{
+    return this.http.put<any>(`http://localhost:8080/adduserdetails`,userde);
+  }
 }
