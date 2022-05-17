@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+// import { error } from 'console';
 import { NgToastService } from 'ng-angular-popup';
 // import { error } from 'console';
 import { RegistrationService } from '../registration.service';
@@ -57,6 +58,16 @@ public id=1;
      }
      
    );
+  }
+  getData(){
+    this.api.fetchUserDetailsById(1).subscribe(
+      data=>{
+        console.log("Response rec");
+      },
+      (error)=>{
+        console.log("error");
+      }
+    )
   }
 
 }
