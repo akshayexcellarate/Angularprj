@@ -69,5 +69,8 @@ public id=1;
       }
     )
   }
+  getDelete(){
+    console.log("deleted");
+  }
 
 }
