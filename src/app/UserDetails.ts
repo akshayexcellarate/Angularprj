@@ -1,6 +1,6 @@
 export class UserDetails {
       id!:number;
-	  mob!:number
+	  mob!:string;
 	prefix!:string;
     firtsName!: string;
      middleName!:string;
