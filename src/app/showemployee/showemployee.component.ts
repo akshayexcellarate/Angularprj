@@ -45,8 +45,17 @@ export class ShowemployeeComponent implements OnInit {
 editProduct(){
 
 } 
-deleteProduct(){
-
+deleteProduct(id:any){
+ this.api.deleteByUserId(id)
+ .subscribe({
+   next:(res)=>{
+    //  console.log(id);
+     console.log("deleted");
+   },
+   error:()=>{
+     console.log("not deleted");
+   }
+ })
 } 
 
 }
