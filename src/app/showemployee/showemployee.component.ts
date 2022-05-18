@@ -51,6 +51,7 @@ deleteProduct(id:any){
    next:(res)=>{
     //  console.log(id);
      console.log("deleted");
+     this.api.getUserDetails();
    },
    error:()=>{
      console.log("not deleted");
