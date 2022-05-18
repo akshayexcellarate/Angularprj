@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit,ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -15,7 +15,7 @@ export class ShowemployeeComponent implements OnInit {
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  constructor(private api:RegistrationService) { }
+  constructor(private api:RegistrationService,private change:ChangeDetectorRef) { }
 
   ngOnInit(): void {
   
@@ -24,6 +24,7 @@ export class ShowemployeeComponent implements OnInit {
           this.dataSource=new MatTableDataSource(data);
           this.dataSource.paginator=this.paginator
           this.dataSource.sort=this.sort
+          this.change.detectChanges();
           console.log("received")
       
         },
@@ -46,17 +47,29 @@ editProduct(){
 
 } 
 deleteProduct(id:any){
- this.api.deleteByUserId(id)
- .subscribe({
-   next:(res)=>{
-    //  console.log(id);
-     console.log("deleted");
-     this.api.getUserDetails();
-   },
-   error:()=>{
-     console.log("not deleted");
-   }
- })
+  console.log(id);
+  this.api.deleteByUserId(id).subscribe(
+    (data)=>{
+      console.log("Deleted");
+      this.api.getUserDetails();
+    },
+    error=>{
+      console.log("not deleted");
+      this.api.getUserDetails();
+    }
+    
+  )
+//  this.api.deleteByUserId(id)
+//  .subscribe({
+//    next:(res)=>{
+//     //  console.log(id);
+//      console.log("deleted");
+//      this.api.getUserDetails();
+//    },
+//    error:()=>{
+//      console.log("not deleted");
+//    }
+//  })
 } 
 
 }
