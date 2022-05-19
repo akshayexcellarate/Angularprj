@@ -6,30 +6,30 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from'@angular/material/input';
-import{MatIconModule} from '@angular/material/icon';
-import {ReactiveFormsModule} from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 import { InboxComponent } from './inbox/inbox.component';
 import { HomeComponent } from './home/home.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RequestComponent } from './request/request.component';
 import { NotificationComponent } from './notification/notification.component';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { HolidaycalenderComponent } from './holidaycalender/holidaycalender.component';
 import { ClearanceComponent } from './clearance/clearance.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatSelectModule} from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSelectModule } from '@angular/material/select';
 import { LetterComponent } from './letter/letter.component';
 import { HrhandbookComponent } from './hrhandbook/hrhandbook.component';
 import { AttendenceComponent } from './attendence/attendence.component';
@@ -40,25 +40,27 @@ import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { QrcodeComponent } from './qrcode/qrcode.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AdminComponent } from './admin/admin.component';
-import{ FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AdminformComponent } from './adminform/adminform.component';
-import { ShowemployeeComponent } from './showemployee/showemployee.component'
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { ShowemployeeComponent } from './showemployee/showemployee.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NgToastModule } from 'ng-angular-popup';
-import { TranslateModule,TranslateLoader } from '@ngx-translate/core';
-import{TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
-export function rootLoaderFactory(http:HttpClient){
-  return new TranslateHttpLoader(http,'./assets/i18n/', '.json');
+export function rootLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+FullCalendarModule.registerPlugins([
+  // register FullCalendar plugins
   dayGridPlugin,
-  interactionPlugin
+  interactionPlugin,
 ]);
 @NgModule({
   declarations: [
@@ -82,8 +84,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AdminComponent,
     AdminformComponent,
     ShowemployeeComponent,
-    AdminloginComponent
-
+    AdminloginComponent,
   ],
   imports: [
     BrowserModule,
@@ -112,17 +113,25 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormsModule,
     MatPaginatorModule,
     NgToastModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground: true,
+    }),
     TranslateModule.forRoot({
-      loader:{
-        provide:TranslateLoader,
-        useFactory:rootLoaderFactory,
-        deps:[HttpClient]
+      loader: {
+        provide: TranslateLoader,
+        useFactory: rootLoaderFactory,
+        deps: [HttpClient],
       },
-      defaultLanguage: 'hi'
+      defaultLanguage: 'hi',
     }),
   ],
-  providers: [RegistrationService,HttpClientModule,  MatDatepickerModule,
-    MatNativeDateModule  ],
-  bootstrap: [AppComponent]
+  providers: [
+    RegistrationService,
+    HttpClientModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
