@@ -1,37 +1,46 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
-import {FormGroup,FormControl,Validators} from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
 import { RegistrationService } from '../registration.service';
 import { User } from '../user';
-import {NgToastModule, NgToastService} from 'ng-angular-popup';
+import { NgToastModule, NgToastService } from 'ng-angular-popup';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  hide=true;
+  hide = true;
   loginForm!: FormGroup;
-user =new User();
-msg='';
-myimage:string="assets/image/login.jpg";
-public logId!:any;
-  constructor(public service:RegistrationService,public _route:Router,private toast:NgToastService,public translateService:TranslateService) { 
-    this.translateService.addLangs(['English','Hindi','Marathi','French']);
+  user = new User();
+  msg = '';
+  myimage: string = 'assets/image/login.jpg';
+  public logId!: any;
+  constructor(
+    public service: RegistrationService,
+    public _route: Router,
+    private toast: NgToastService,
+    public translateService: TranslateService,
+    private ngx: NgxUiLoaderService
+  ) {
+    this.translateService.addLangs(['English', 'Hindi', 'Marathi', 'French']);
     this.translateService.setDefaultLang('English');
     this.translateService.use('en');
   }
 
   ngOnInit(): void {
-    this.loginForm=new FormGroup({
-      email:new FormControl('',[Validators.required,Validators.email]),
-      password:new FormControl('',[Validators.required,Validators.minLength(6)])
-    }
-    );
+    this.loginForm = new FormGroup({
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(6),
+      ]),
+    });
   }
 
   // onLogin(){
@@ -44,32 +53,39 @@ public logId!:any;
   //     }
   //   )
   // }
-  onLogin(){
+  onLogin() {
     this.service.loginUserFromRemote(this.user).subscribe(
-      data=>{
-        console.log(this.service.loginUser)
-        console.log("response recived")
-        this.service.global=true;
-      //  console.log(data.id);
-      console.log(this.service.global);
-       this.logId=data.id;
+      (data) => {
+        console.log(this.service.loginUser);
+        console.log('response recived');
+        this.service.global = true;
+        //  console.log(data.id);
+        console.log(this.service.global);
+        this.logId = data.id;
         console.log(this.logId);
-       this.service.setData(this.logId)
-       localStorage.setItem('token',data.emailId)
-    this._route.navigate(['/dashboard'])
-    } ,
-    error=>{
-      if(this.user.emailId==null||this.user.password===null){
-        this.toast.warning({detail:"Warning Message",summary:"Fields are empty",duration:5000})
-        // this.toast.warning({detail:this.translateService.instant('WARNINGMSG'),summary:"Fields are empty",duration:5000})
-      }else{
-        this.toast.error({detail:"Error Message",summary:"please enter valid email id and password",duration:5000})
+        this.service.setData(this.logId);
+        localStorage.setItem('token', data.emailId);
+        this._route.navigate(['/dashboard']);
+      },
+      (error) => {
+        if (this.user.emailId == null || this.user.password === null) {
+          this.toast.warning({
+            detail: 'Warning Message',
+            summary: 'Fields are empty',
+            duration: 5000,
+          });
+          // this.toast.warning({detail:this.translateService.instant('WARNINGMSG'),summary:"Fields are empty",duration:5000})
+        } else {
+          this.toast.error({
+            detail: 'Error Message',
+            summary: 'please enter valid email id and password',
+            duration: 5000,
+          });
+        }
+        console.log(this.service.global);
+        console.log('exception occured');
       }
-      console.log(this.service.global);
-      console.log("exception occured")
-      
-  }
-    )
+    );
 
     // this.service.fetchLoginId(this.user).subscribe(
     //   data=>{
@@ -80,5 +96,5 @@ public logId!:any;
     //   }
     // )
   }
-dd=this.logId
+  dd = this.logId;
 }

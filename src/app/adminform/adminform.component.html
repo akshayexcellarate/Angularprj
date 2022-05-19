@@ -54,6 +54,13 @@
           <mat-label>*Mail</mat-label>
           <input [(ngModel)]="userdetails.mail" class="formfont" name="mail" matInput />
         </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*emp status</mat-label>
+          <mat-select [(ngModel)]="userdetails.empstatus" class="formfont" name="empstatus">
+            <mat-option value="confirmed">confirmed</mat-option>
+            <mat-option value="probation">probation</mat-option>
+          </mat-select>
+        </mat-form-field>
         <br />
         <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*skill</mat-label>
@@ -79,13 +86,6 @@
           <mat-select [(ngModel)]="userdetails.emptype" class="formfont" name="emptype">
             <mat-option value="permanent">Permanent</mat-option>
             <mat-option value="Trainee">Trainee</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field class="formgap" appearance="legacy">
-          <mat-label>*emp status</mat-label>
-          <mat-select [(ngModel)]="userdetails.empstatus" class="formfont" name="empstatus">
-            <mat-option value="confirmed">confirmed</mat-option>
-            <mat-option value="probation">probation</mat-option>
           </mat-select>
         </mat-form-field>
         <br />

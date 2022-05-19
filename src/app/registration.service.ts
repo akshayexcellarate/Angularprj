@@ -16,9 +16,7 @@ export class RegistrationService {
   user!: UserDetails;
   id!: any;
   Holi!: any;
-  constructor(private http: HttpClient, private route: Router) {
-
-  }
+  constructor(private http: HttpClient, private route: Router) {}
 
   setData(idd: any) {
     this.id = idd;
@@ -36,12 +34,11 @@ export class RegistrationService {
   public loginUserFromRemote(user: User): Observable<any> {
     return this.http.post<any>('http://localhost:8008/login', user);
   }
-  loginUser(token: string)
-{
-  localStorage.setItem("token",token)
-  console.log(token);
-  return true;
-}
+  loginUser(token: string) {
+    localStorage.setItem('token', token);
+    console.log(token);
+    return true;
+  }
   // public fetchLoginId(ser:User):Observable<any>{
   //   return this.http.get<any>("http://localhost:8008/login/"+'akshay@gmail.com');
   // }
@@ -53,25 +50,25 @@ export class RegistrationService {
   public fetchUserLoginDetailById(id: any): Observable<any> {
     return this.http.get<any>(`http://localhost:8008/login/${id}`);
   }
-  public fetchBdayUser():Observable<any>{
+  public fetchBdayUser(): Observable<any> {
     return this.http.get<any>(`http://localhost:8080/getuserdetailsbydate`);
   }
-  public addUserDetails(userde: UserDetails):Observable<any>{
-    return this.http.post<any>(`http://localhost:8080/adduserdetails`,userde);
+  public addUserDetails(userde: UserDetails): Observable<any> {
+    return this.http.post<any>(`http://localhost:8080/adduserdetails`, userde);
   }
-  public getUserDetails():Observable<any>{
+  public getUserDetails(): Observable<any> {
     return this.http.get<any>(`http://localhost:8080/getuserdetails`);
   }
-  public fetchLogById(admin:Admin):Observable<any>{
+  public fetchLogById(admin: Admin): Observable<any> {
     return this.http.post<any>('http://localhost:8888/admin', admin);
   }
-  public fetchAdminById(id:any):Observable<any>{
+  public fetchAdminById(id: any): Observable<any> {
     return this.http.get<any>(`http://localhost:8888/admin/${id}`);
   }
-  public deleteByUserId(id:any):Observable<any>{
+  public deleteByUserId(id: any): Observable<any> {
     return this.http.delete<any>(`http://localhost:8080/deleteuserbyid/${id}`);
   }
-  public updateUser(userde: UserDetails):Observable<any>{
-    return this.http.put<any>(`http://localhost:8080/adduserdetails`,userde);
+  public updateUser(userde: UserDetails): Observable<any> {
+    return this.http.put<any>(`http://localhost:8080/adduserdetails`, userde);
   }
 }

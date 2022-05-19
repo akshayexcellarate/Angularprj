@@ -1,10 +1,10 @@
-{  
-    "WELCOME":"Bienvenue !",
-    "SIGNIN":"Connectez-vous pour continuer",
-    "HAPPIER":"Permettre des lieux de travail plus heureux",
-    "ADMINLINK":"cliquez ici si vous êtes administrateur",
-    "SIGNINN":"S'identifier",
-    "USERNAME":"Nom d'utilisateur",
-    "PASSWORD":"Mot de passe",
-    "WARNINGMSG":"warning message"
+{
+  "WELCOME": "Bienvenue !",
+  "SIGNIN": "Connectez-vous pour continuer",
+  "HAPPIER": "Permettre des lieux de travail plus heureux",
+  "ADMINLINK": "cliquez ici si vous êtes administrateur",
+  "SIGNINN": "S'identifier",
+  "USERNAME": "Nom d'utilisateur",
+  "PASSWORD": "Mot de passe",
+  "WARNINGMSG": "warning message"
 }
