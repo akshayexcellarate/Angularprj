@@ -23,7 +23,7 @@ export class UpdateComponent implements OnInit {
       }
     )
   }
-  editProduct() {
+  editEmployee() {
     
   
    }
