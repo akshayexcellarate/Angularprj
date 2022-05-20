@@ -12,7 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class RegistrationService {
   global: any;
-
+  update!: number;
   user!: UserDetails;
   id!: any;
   Holi!: any;
@@ -69,6 +69,6 @@ export class RegistrationService {
     return this.http.delete<any>(`http://localhost:8080/deleteuserbyid/${id}`);
   }
   public updateUser(userde: UserDetails): Observable<any> {
-    return this.http.put<any>(`http://localhost:8080/adduserdetails`, userde);
+    return this.http.put<any>(`http://localhost:8080/updateemployee`, userde);
   }
 }
