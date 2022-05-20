@@ -1,3 +1,4 @@
+import { AstMemoryEfficientTransformer } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 // import { error } from 'console';
@@ -57,6 +58,7 @@ export class AdminformComponent implements OnInit {
           summary: 'Record Added',
           duration: 5000,
         });
+
       },
       (error) => {
         console.log(error);
