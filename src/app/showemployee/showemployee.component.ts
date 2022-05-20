@@ -3,7 +3,9 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { RegistrationService } from '../registration.service';
-
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { UpdateComponent } from '../update/update.component';
+import { FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-showemployee',
   templateUrl: './showemployee.component.html',
@@ -25,7 +27,9 @@ export class ShowemployeeComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   constructor(
     private api: RegistrationService,
-    private change: ChangeDetectorRef
+    private change: ChangeDetectorRef,
+    public dialog: MatDialog,
+    private formbulder: FormBuilder,
   ) {}
 
   ngOnInit(): void {
@@ -50,9 +54,14 @@ export class ShowemployeeComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-  editProduct() {}
+  editProduct(id: any) {
+    const dialog = this.dialog.open(UpdateComponent);
+    //  console.log(id);
+
+    this.api.update = id;
+  }
   deleteProduct(id: any) {
-    console.log(id);
+    // console.log(id);
     this.api.deleteByUserId(id).subscribe(
       (data) => {
         console.log('Deleted');
