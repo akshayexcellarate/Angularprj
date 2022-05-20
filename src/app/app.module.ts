@@ -53,6 +53,9 @@ import { NgToastModule } from 'ng-angular-popup';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { UpdateComponent } from './update/update.component';
+
 
 export function rootLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -85,6 +88,7 @@ FullCalendarModule.registerPlugins([
     AdminformComponent,
     ShowemployeeComponent,
     AdminloginComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -114,6 +118,7 @@ FullCalendarModule.registerPlugins([
     MatPaginatorModule,
     NgToastModule,
     NgxUiLoaderModule,
+    MatProgressSpinnerModule,
     NgxUiLoaderHttpModule.forRoot({
       showForeground: true,
     }),
