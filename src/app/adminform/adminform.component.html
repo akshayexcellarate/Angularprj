@@ -88,6 +88,10 @@
             <mat-option value="Trainee">Trainee</mat-option>
           </mat-select>
         </mat-form-field>
+        <mat-form-field class="formgap" appearance="legacy">
+          <mat-label>*Company</mat-label>
+          <input [(ngModel)]="userdetails.company" class="formfont" name="company" matInput />
+        </mat-form-field>
         <br />
          <!-- <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*dob</mat-label>
@@ -101,10 +105,7 @@
           <mat-datepicker #picker3></mat-datepicker>
         </mat-form-field>  -->
         <br />
-        <mat-form-field class="formgap" appearance="legacy">
-          <mat-label>*Company</mat-label>
-          <input [(ngModel)]="userdetails.company" class="formfont" name="company" matInput />
-        </mat-form-field>
+       
         <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*Business Unit</mat-label>
           <mat-select [(ngModel)]="userdetails.bu" class="formfont" name="bu">
@@ -133,11 +134,12 @@
           <mat-label>*Designation</mat-label>
           <input [(ngModel)]="userdetails.desig" class="formfont" name="desig" matInput />
         </mat-form-field>
-        <br />
         <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*Region</mat-label>
           <input [(ngModel)]="userdetails.region" class="formfont" name="region" matInput />
         </mat-form-field>
+        <br />
+        
         <mat-form-field class="formgap" appearance="legacy">
           <mat-label>*Branch</mat-label>
           <input [(ngModel)]="userdetails.branch" class="formfont" name="branch" matInput />
