@@ -61,6 +61,7 @@ export class DashboardComponent implements OnInit {
       },
       (error) => {
         console.log('exception occured');
+        console.log("test");
       }
     );
     this.api.fetchBdayUser().subscribe(
